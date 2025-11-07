@@ -1,0 +1,87 @@
+{
+  "cases": [
+    {
+      "id": "pipelines-secure",
+      "title": "CI/CD con gates de seguridad",
+      "summary": "Pipelines con SAST/DAST/SCA, SBOM firmado y OPA para riesgo controlado. Implementación completa en multi-repo con gates automáticos que bloquean deployment según nivel de riesgo.",
+      "stack": ["GitHub Actions", "Trivy", "Grype", "DefectDojo", "OPA/Conftest", "Cosign", "SBOM"],
+      "metrics": ["-78% vulnerabilidades", "MTTD 24h", "0 secretos en main"],
+      "ttps": [
+        "T1190 Exploit Public-Facing Application",
+        "T1552 Unsecured Credentials", 
+        "T1525 Implant Internal Image",
+        "T1195.001 Supply Chain Compromise: Software Dependency",
+        "T1059.007 Command and Scripting Interpreter: JavaScript"
+      ]
+    },
+    {
+      "id": "redteam-ad",
+      "title": "Red Team en AD híbrido",
+      "summary": "Emulación de adversario con persistencia controlada y hallazgos ejecutivos. Simulación completa de APT con técnicas de lateral movement, privilege escalation y exfiltración en entorno híbrido Azure AD + on-premises.",
+      "stack": ["BloodHound", "C2 simulado", "Sysmon", "Sigma", "SIEM", "Mimikatz", "PowerShell Empire"],
+      "metrics": ["-65% attack paths", "3 nuevas reglas SIEM", "2 playbooks SOC"],
+      "ttps": [
+        "T1078 Valid Accounts",
+        "T1059.001 PowerShell",
+        "T1041 Exfiltration Over C2 Channel",
+        "T1021.001 Remote Desktop Protocol",
+        "T1003.001 LSASS Memory Dumping",
+        "T1558.003 Kerberoasting"
+      ]
+    },
+    {
+      "id": "supply-chain",
+      "title": "Supply Chain Hardening", 
+      "summary": "Firmas, provenance y políticas para dependencias e imágenes de contenedor. Implementación de SLSA framework con verificación automática de integridad y trazabilidad completa de artefactos.",
+      "stack": ["Cosign", "SBOM", "SLSA lvl.1", "Harbor", "Admission Policies", "Notary", "TUF"],
+      "metrics": ["-90% CVEs críticos", "5 controles extra", "SBOM verificado"],
+      "ttps": [
+        "T1195.002 Supply Chain Compromise: Software Supply Chain",
+        "T1608.001 Stage Capabilities: Upload Malware",
+        "T1566.001 Spearphishing Attachment",
+        "T1204.002 User Execution: Malicious File"
+      ]
+    },
+    {
+      "id": "cloud-iac",
+      "title": "Cloud + IaC seguro",
+      "summary": "Terraform con validación OPA/Conftest y scanning continuo. Políticas as Code para prevenir misconfigurations y compliance automático con frameworks de seguridad cloud.",
+      "stack": ["Terraform", "OPA", "Conftest", "tfsec", "Checkov", "Terrascan", "AWS Config"],
+      "metrics": ["-72% misconfigs", "0 buckets públicos", "CI bloquea riesgos"],
+      "ttps": [
+        "T1530 Data from Cloud Storage Object",
+        "T1098 Account Manipulation",
+        "T1078.004 Cloud Accounts",
+        "T1526 Cloud Service Discovery",
+        "T1580 Cloud Infrastructure Discovery"
+      ]
+    },
+    {
+      "id": "blue-detections",
+      "title": "Detecciones Azul accionables",
+      "summary": "De telemetría a reglas y dashboards con MTTR mejorado. Desarrollo de detecciones basadas en MITRE ATT&CK con reducción significativa de falsos positivos y alertas contextualizadas.",
+      "stack": ["Loki", "ELK", "Zeek", "Suricata", "Grafana", "Sigma", "YARA"],
+      "metrics": ["-40% falsos positivos", "+6 reglas SIEM", "MTTR 36h → 8h"],
+      "ttps": [
+        "T1040 Network Sniffing",
+        "T1027 Obfuscated Files or Information",
+        "T1055 Process Injection", 
+        "T1070.004 File Deletion",
+        "T1036.005 Match Legitimate Name or Location"
+      ]
+    },
+    {
+      "id": "soar-lite",
+      "title": "SOAR-lite en Python",
+      "summary": "Playbooks de respuesta y orquestación con APIs. Framework ligero de automatización para respuesta a incidentes con integración multi-herramienta y trazabilidad completa de acciones.",
+      "stack": ["Python", "FastAPI", "Webhook", "JQ", "Make", "Redis", "Celery"],
+      "metrics": ["-55% tiempo de respuesta", "+4 integraciones", "Audit trail completo"],
+      "ttps": [
+        "T1106 Native API",
+        "T1203 Exploitation for Client Execution",
+        "T1546 Event Triggered Execution",
+        "T1047 Windows Management Instrumentation"
+      ]
+    }
+  ]
+}

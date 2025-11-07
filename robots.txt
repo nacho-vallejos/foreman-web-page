@@ -1,0 +1,36 @@
+# robots.txt for ignaciovallejos.dev
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ignaciovallejos.dev/sitemap.xml
+
+# Disallow crawling of private or admin areas (future use)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of assets
+Allow: /assets/
+
+# Rate limiting (optional)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: BadBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

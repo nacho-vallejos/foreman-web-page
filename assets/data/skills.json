@@ -1,0 +1,47 @@
+{
+  "items": [
+    { "name": "Trivy", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 5 },
+    { "name": "OPA/Conftest", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    { "name": "SBOM/Cosign", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    { "name": "GitHub Actions", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    { "name": "GitLab CI", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    { "name": "Grype/Syft", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    { "name": "DefectDojo", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 3 },
+    { "name": "tfsec/Checkov", "category": "devsecops", "categoryLabel": "DevSecOps", "area": "devsecops", "areaLabel": "DevSecOps", "level": 4 },
+    
+    { "name": "Nuclei", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 4 },
+    { "name": "BloodHound", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    { "name": "Kali Tooling", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    { "name": "C2 Frameworks", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    { "name": "Mimikatz", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    { "name": "PowerShell Empire", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    { "name": "OSINT", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 4 },
+    { "name": "Social Engineering", "category": "redteam", "categoryLabel": "Red Team", "area": "redteam", "areaLabel": "Red Team", "level": 3 },
+    
+    { "name": "Terraform", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 4 },
+    { "name": "Kubernetes", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 3 },
+    { "name": "AWS", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 3 },
+    { "name": "Azure", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 3 },
+    { "name": "Docker/Containers", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 4 },
+    { "name": "Helm", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 3 },
+    { "name": "Istio/Service Mesh", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 2 },
+    { "name": "Harbor Registry", "category": "cloud", "categoryLabel": "Cloud/Infra", "area": "cloud", "areaLabel": "Cloud/Infra", "level": 3 },
+    
+    { "name": "Grafana/Loki", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 4 },
+    { "name": "ELK Stack", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 3 },
+    { "name": "Prometheus", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 3 },
+    { "name": "Zeek/Suricata", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 3 },
+    { "name": "Sysmon", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 3 },
+    { "name": "Sigma Rules", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 4 },
+    { "name": "YARA", "category": "observability", "categoryLabel": "Observabilidad", "area": "observability", "areaLabel": "Observabilidad", "level": 3 },
+    
+    { "name": "Python", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 4 },
+    { "name": "FastAPI", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 3 },
+    { "name": "Bash", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 4 },
+    { "name": "PowerShell", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 3 },
+    { "name": "Go", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 3 },
+    { "name": "JavaScript/Node.js", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 3 },
+    { "name": "SQL", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 3 },
+    { "name": "YAML/JSON", "category": "programming", "categoryLabel": "Programación", "area": "programming", "areaLabel": "Programación", "level": 4 }
+  ]
+}

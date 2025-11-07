@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Ignacio Vallejos — DevSecOps Engineer & Red Team Specialist</title>
+  <meta name="description" content="DevSecOps Engineer especializado en Red Team operations. Experto en seguridad ofensiva, automatización de infraestructura segura y operaciones de penetration testing.">
+  <meta name="keywords" content="DevSecOps, Red Team, Penetration Testing, Cybersecurity, Infrastructure Security, Automation">
+  <meta name="author" content="Ignacio Vallejos">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ignacio Vallejos — DevSecOps Engineer & Red Team Specialist">
+  <meta property="og:description" content="DevSecOps Engineer especializado en Red Team operations. Experto en seguridad ofensiva, automatización de infraestructura segura y operaciones de penetration testing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ignaciovallejos.dev">
+  <meta property="og:image" content="https://ignaciovallejos.dev/assets/img/og-image.jpg">
+  <meta property="og:site_name" content="Ignacio Vallejos">
+  <meta property="og:locale" content="es_ES">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ignacio Vallejos — DevSecOps Engineer & Red Team Specialist">
+  <meta name="twitter:description" content="DevSecOps Engineer especializado en Red Team operations. Experto en seguridad ofensiva, automatización de infraestructura segura.">
+  <meta name="twitter:image" content="https://ignaciovallejos.dev/assets/img/twitter-card.jpg">
+  <meta name="twitter:creator" content="@ignaciovallejos">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#7c5cff">
+  <meta name="msapplication-TileColor" content="#7c5cff">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ignacio Vallejos",
+    "jobTitle": "DevSecOps Engineer",
+    "description": "DevSecOps Engineer especializado en Red Team operations",
+    "url": "https://ignaciovallejos.dev",
+    "sameAs": [
+      "https://github.com/ignaciovallejos",
+      "https://linkedin.com/in/ignaciovallejos"
+    ],
+    "knowsAbout": ["DevSecOps", "Red Team", "Penetration Testing", "Cybersecurity", "Infrastructure Security"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    }
+  }
+  </script>
+</head>
+
+<body class="background-noise">
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+  
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" role="progressbar" aria-label="Progreso de lectura">
+    <div class="scroll-progress-bar"></div>
+  </div>
+  
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#hero" class="focus-ring">Ignacio Vallejos — DevSecOps / Red Team</a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
+          <a href="#hero" class="nav-link focus-ring">Home</a>
+          <a href="#services" class="nav-link focus-ring">Qué hago</a>
+          <a href="#cases" class="nav-link focus-ring">Casos</a>
+          <a href="#toolchain" class="nav-link focus-ring">Toolchain</a>
+          <a href="#repos" class="nav-link focus-ring">Repos</a>
+          <a href="#timeline" class="nav-link focus-ring">Timeline</a>
+          <a href="#notes" class="nav-link focus-ring">Notas</a>
+          <a href="#contact" class="nav-link focus-ring">Contacto</a>
+        </nav>
+        
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="lang-toggle focus-ring" aria-label="Cambiar idioma" title="Cambiar idioma">
+            ES
+          </button>
+          
+          <button class="mobile-menu-button focus-ring" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Navegación móvil">
+      <div class="mobile-nav">
+        <a href="#hero" class="mobile-nav-link focus-ring">Home</a>
+        <a href="#services" class="mobile-nav-link focus-ring">Qué hago</a>
+        <a href="#cases" class="mobile-nav-link focus-ring">Casos</a>
+        <a href="#toolchain" class="mobile-nav-link focus-ring">Toolchain</a>
+        <a href="#repos" class="mobile-nav-link focus-ring">Repos</a>
+        <a href="#timeline" class="mobile-nav-link focus-ring">Timeline</a>
+        <a href="#notes" class="mobile-nav-link focus-ring">Notas</a>
+        <a href="#contact" class="mobile-nav-link focus-ring">Contacto</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero" aria-label="Presentación">
+      <div class="hero__bg" aria-hidden="true">
+        <!-- Video opcional (si existe /assets/videos/hero.mp4) -->
+        <video class="hero__video" autoplay muted loop playsinline preload="auto">
+          <source src="/assets/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <!-- Fallback estático -->
+        <img class="hero__fallback" src="/assets/img/hero-fallback.webp" alt="" loading="eager" />
+        <!-- Capa de gradiente reactivo -->
+        <div class="hero__gradient"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow" data-reveal>Ignacio Vallejos</p>
+        <h1 class="hero__title" data-reveal>
+          DevSecOps Engineer <span class="stroke-text">//</span> Red Team-minded SecOps
+        </h1>
+        <p class="hero__subtitle" data-reveal>
+          Integro seguridad en el ciclo de vida del software y pruebo como adversario para fortalecer defensas.
+        </p>
+        <div class="hero__ctas" data-reveal>
+          <a class="btn" href="#cases" data-cta="view-cases">Ver casos</a>
+          <a class="btn btn-ghost" href="#contact" data-cta="contact">Contactar</a>
+        </div>
+
+        <div class="hero__marquee" aria-hidden="true">
+          <ul class="marquee__track">
+            <li>SAST</li><li>DAST</li><li>SCA</li><li>SBOM</li><li>IaC Security</li>
+            <li>OPA/Conftest</li><li>Trivy</li><li>GitOps</li><li>ATT&CK</li><li>IR/DFIR</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="skip-section" href="#services" aria-label="Ir a Qué hago">↓</a>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services" aria-label="Qué hago">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-reveal>Qué hago</h2>
+          <p class="section-sub" data-reveal>Seguridad integrada en el ciclo de vida y ejercicios de adversario con resultados accionables.</p>
+        </header>
+
+        <div class="services__grid">
+          <!-- Card: DevSecOps -->
+          <article class="service-card glass card-tilt" tabindex="0" aria-labelledby="svc-devsecops-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- icono svg simple -->
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 id="svc-devsecops-title" class="service-card__title">DevSecOps</h3>
+            <p class="service-card__desc">Pipelines con gates de seguridad, observabilidad y hardening de supply chain.</p>
+            <ul class="service-card__list">
+              <li><span class="badge" title="Static App Security Testing">SAST</span> + <span class="badge" title="Dynamic App Security Testing">DAST</span> + <span class="badge" title="Software Composition Analysis">SCA</span></li>
+              <li>SBOM + firmas; políticas <strong>OPA/Conftest</strong></li>
+              <li>IaC segura (Terraform) + <strong>Trivy/Grype</strong></li>
+              <li>GitOps / CI-CD con <em>break the build</em> por riesgo</li>
+              <li>Telemetría (Loki/ELK) → alertas accionables</li>
+            </ul>
+            <a class="service-card__cta btn" href="#cases" aria-label="Ver casos de DevSecOps">Ver casos</a>
+          </article>
+
+          <!-- Card: Red Team -->
+          <article class="service-card glass card-tilt" tabindex="0" aria-labelledby="svc-redteam-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><path d="M9 12l3 3 4-5"/>
+              </svg>
+            </div>
+            <h3 id="svc-redteam-title" class="service-card__title">Red Team</h3>
+            <p class="service-card__desc">Emulación de adversarios mapeada a MITRE ATT&CK y reportes ejecutivos claros.</p>
+            <ul class="service-card__list">
+              <li>TTPs ATT&CK: Initial Access → Exfiltration</li>
+              <li>Phishing simulado y ejercicio de credenciales</li>
+              <li>Persistencia, C2 controlado y detección azul</li>
+              <li>Recomendaciones priorizadas por riesgo</li>
+              <li>Re-test y validación de remediaciones</li>
+            </ul>
+            <a class="service-card__cta btn btn-ghost" href="#contact" aria-label="Contactar por ejercicios Red Team">Contactar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Cases Section -->
+    <section id="cases" class="cases" aria-label="Casos y laboratorios">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-reveal>Casos / Labs</h2>
+          <p class="section-sub" data-reveal>Proyectos prácticos con resultados medibles y trazables a controles.</p>
+        </header>
+
+        <div class="cases__grid">
+          <!-- 6 tarjetas placeholder; los datos definitivos se leen de assets/data/cases.json -->
+          <article class="case-card card-tilt" data-case-id="pipelines-secure">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-pipelines.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">CI/CD con gates de seguridad</h3>
+              <p class="case-card__desc">SAST/DAST/SCA, SBOM firmado y OPA en pipelines multi-repo.</p>
+              <ul class="case-card__metrics" aria-label="Métricas">
+                <li><span>-78%</span> vulnerabilidades</li>
+                <li><span>24h</span> MTTD</li>
+                <li><span>0</span> secrets en main</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="pipelines-secure" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+
+          <article class="case-card card-tilt" data-case-id="redteam-ad">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-redteam.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Red Team en AD híbrido</h3>
+              <p class="case-card__desc">Emulación ATT&CK, persistencia controlada y reporte ejecutivo.</p>
+              <ul class="case-card__metrics">
+                <li><span>-65%</span> paths de ataque</li>
+                <li><span>+3</span> detecciones SIEM</li>
+                <li><span>2</span> playbooks nuevos</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="redteam-ad" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+
+          <article class="case-card card-tilt" data-case-id="supply-chain">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-supply.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Supply Chain Hardening</h3>
+              <p class="case-card__desc">Firmas, provenance y políticas en dependencias e imágenes.</p>
+              <ul class="case-card__metrics">
+                <li><span>-90%</span> CVEs críticos</li>
+                <li><span>+5</span> controles</li>
+                <li><span>SBOM</span> verificado</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="supply-chain" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+
+          <article class="case-card card-tilt" data-case-id="cloud-iac">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-iac.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Cloud + IaC seguro</h3>
+              <p class="case-card__desc">Terraform con OPA/Conftest y scanning continuo.</p>
+              <ul class="case-card__metrics">
+                <li><span>-72%</span> misconfigs</li>
+                <li><span>0</span> buckets públicos</li>
+                <li><span>CI</span> bloquea riesgos</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="cloud-iac" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+
+          <article class="case-card card-tilt" data-case-id="blue-detections">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-detections.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">Detecciones Azul accionables</h3>
+              <p class="case-card__desc">De telemetría a reglas, con dashboards y MTTx claros.</p>
+              <ul class="case-card__metrics">
+                <li><span>-40%</span> falsos positivos</li>
+                <li><span>+6</span> reglas SIEM</li>
+                <li><span>MTTR</span> 36h → 8h</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="blue-detections" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+
+          <article class="case-card card-tilt" data-case-id="soar-lite">
+            <figure class="case-card__media">
+              <img src="/assets/img/case-soar.webp" alt="" loading="lazy" width="800" height="600">
+            </figure>
+            <div class="case-card__body">
+              <h3 class="case-card__title">SOAR-lite en Python</h3>
+              <p class="case-card__desc">Playbooks de respuesta y orquestación con APIs.</p>
+              <ul class="case-card__metrics">
+                <li><span>-55%</span> tiempo de respuesta</li>
+                <li><span>+4</span> integraciones</li>
+                <li><span>Audit</span> trail</li>
+              </ul>
+              <button class="btn btn-ghost case-card__open" data-open-case="soar-lite" aria-haspopup="dialog" aria-controls="case-modal">Leer caso</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Modal accesible -->
+      <div id="case-modal" class="case-modal" role="dialog" aria-modal="true" aria-labelledby="case-modal-title" hidden>
+        <div class="case-modal__backdrop" data-close-case></div>
+        <div class="case-modal__dialog" role="document">
+          <button class="case-modal__close" aria-label="Cerrar" data-close-case>×</button>
+          <header class="case-modal__head">
+            <h3 id="case-modal-title">Título del caso</h3>
+            <p class="case-modal__subtitle">Resumen breve</p>
+          </header>
+          <section class="case-modal__content">
+            <div class="case-modal__meta">
+              <div><strong>Stack:</strong> <span data-field="stack">-</span></div>
+              <div><strong>Métricas:</strong> <span data-field="metrics">-</span></div>
+            </div>
+            <div class="case-modal__body">
+              <h4>TTPs (MITRE ATT&CK)</h4>
+              <ul class="case-modal__ttps" data-field="ttps"></ul>
+            </div>
+          </section>
+          <footer class="case-modal__foot">
+            <a class="btn" href="#contact">Quiero algo así</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Toolchain Section -->
+    <section id="toolchain" class="toolchain" aria-label="Toolchain y habilidades">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-reveal>Toolchain &amp; Skills</h2>
+          <p class="section-sub" data-reveal>Stack principal con niveles (1–5) y foco en DevSecOps + Red Team.</p>
+        </header>
+
+        <!-- Filtros por categoría -->
+        <div class="toolchain__filters" role="tablist" aria-label="Categorías de skills">
+          <button class="chip is-active" role="tab" aria-selected="true" data-skill-filter="all">Todo</button>
+          <button class="chip" role="tab" aria-selected="false" data-skill-filter="devsecops">DevSecOps</button>
+          <button class="chip" role="tab" aria-selected="false" data-skill-filter="redteam">Red Team</button>
+          <button class="chip" role="tab" aria-selected="false" data-skill-filter="cloud">Cloud/Infra</button>
+          <button class="chip" role="tab" aria-selected="false" data-skill-filter="observability">Observabilidad</button>
+          <button class="chip" role="tab" aria-selected="false" data-skill-filter="programming">Programación</button>
+        </div>
+
+        <!-- Badges dinámicos -->
+        <ul class="toolchain__badges" id="skill-badges" aria-live="polite" aria-busy="false"></ul>
+
+        <!-- Radar chart + tabla accesible -->
+        <div class="toolchain__viz">
+          <figure class="radar" aria-labelledby="radar-title" aria-describedby="radar-desc">
+            <figcaption id="radar-title" class="visually-hidden">Radar de habilidades por área</figcaption>
+            <p id="radar-desc" class="visually-hidden">Gráfico de radar que refleja un nivel de 1 a 5 por categoría; ver tabla siguiente para valores exactos.</p>
+            <canvas id="skills-radar" width="700" height="500" role="img" aria-label="Radar de habilidades"></canvas>
+          </figure>
+          <!-- Tabla offscreen para accesibilidad -->
+          <div class="sr-table" aria-hidden="false">
+            <table id="skills-table">
+              <thead><tr><th>Categoría</th><th>Nivel (1–5)</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Repos Section -->
+    <section id="repos" class="repos" aria-label="Repos destacados">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title" data-reveal>Repos destacados</h2>
+          <p class="section-sub" data-reveal>Código público relevante para DevSecOps y Red Team.</p>
+        </header>
+
+        <div class="repos__controls">
+          <form id="repo-controls" class="repo-controls" role="search" aria-label="Buscar repos en GitHub">
+            <div class="field">
+              <label for="gh-user">GitHub</label>
+              <input id="gh-user" name="gh-user" type="text" placeholder="usuario" autocomplete="username" />
+            </div>
+            <div class="field">
+              <label for="q">Buscar</label>
+              <input id="q" name="q" type="search" placeholder="trivy, terraform, nuclei…" />
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="all">Todos</option>
+                <option value="devsecops">devsecops</option>
+                <option value="red-team">red-team</option>
+                <option value="security">security</option>
+                <option value="pentest">pentest</option>
+                <option value="kubernetes">kubernetes</option>
+                <option value="terraform">terraform</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sort">Ordenar</label>
+              <select id="sort" name="sort">
+                <option value="stars">Más estrellas</option>
+                <option value="updated">Última actualización</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Aplicar</button>
+          </form>
+        </div>
+
+        <!-- grid / resultados -->
+        <ul id="repo-grid" class="repo-grid" aria-live="polite" aria-busy="false"></ul>
+
+        <!-- paginación -->
+        <nav class="repo-pager" aria-label="Paginación de repos">
+          <button class="btn btn-ghost" id="prev-page" disabled>Anterior</button>
+          <span id="page-info" role="status" aria-live="polite">1 / 1</span>
+          <button class="btn" id="next-page" disabled>Siguiente</button>
+        </nav>
+
+        <!-- avisos -->
+        <p id="repo-note" class="repo-note" hidden></p>
+      </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section id="timeline" class="section" aria-labelledby="timeline-title">
+      <div class="container">
+        <h2 id="timeline-title" class="section-title fade-in-up">Hitos</h2>
+        <p class="section-subtitle fade-in-up">
+          Mi trayectoria en ciberseguridad
+        </p>
+        
+        <div class="timeline">
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024</div>
+              <h3 class="timeline-title">Lead DevSecOps Engineer</h3>
+              <p class="timeline-description">
+                Liderando transformación DevSecOps en empresa fintech, implementando security by design y automated compliance para PCI DSS.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023</div>
+              <h3 class="timeline-title">OSCP Certification</h3>
+              <p class="timeline-description">
+                Obtención de certificación OSCP (Offensive Security Certified Professional), validando habilidades avanzadas en penetration testing y exploitation.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022</div>
+              <h3 class="timeline-title">Red Team Specialist</h3>
+              <p class="timeline-description">
+                Especialización en Red Team operations, desarrollando capacidades de threat emulation y adversary simulation para Fortune 500 companies.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2021</div>
+              <h3 class="timeline-title">Cloud Security Architect</h3>
+              <p class="timeline-description">
+                Diseño e implementación de arquitecturas de seguridad multi-cloud, enfocándose en Zero Trust y container security en entornos Kubernetes.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item fade-in-up">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2019</div>
+              <h3 class="timeline-title">DevSecOps Journey Begins</h3>
+              <p class="timeline-description">
+                Inicio en DevSecOps como Security Engineer, automatizando procesos de seguridad y integrando security testing en pipelines CI/CD.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Notes Section -->
+    <section id="notes" class="section" aria-labelledby="notes-title">
+      <div class="container">
+        <h2 id="notes-title" class="section-title fade-in-up">Notas</h2>
+        <p class="section-subtitle fade-in-up">
+          Reflexiones sobre ciberseguridad y tecnología
+        </p>
+        
+        <div class="notes-grid">
+          <article class="note-card fade-in-up" tabindex="0">
+            <div class="note-meta">
+              <time datetime="2024-11-01">1 Nov 2024</time>
+              <span>•</span>
+              <span>8 min read</span>
+            </div>
+            <h3 class="note-title">
+              Zero Trust en Kubernetes: Más allá de Network Policies
+            </h3>
+            <p class="note-excerpt">
+              Explorando implementaciones avanzadas de Zero Trust en clusters Kubernetes, desde service mesh hasta workload identity y runtime security.
+            </p>
+            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+          </article>
+          
+          <article class="note-card fade-in-up" tabindex="0">
+            <div class="note-meta">
+              <time datetime="2024-10-15">15 Oct 2024</time>
+              <span>•</span>
+              <span>12 min read</span>
+            </div>
+            <h3 class="note-title">
+              Red Team vs Purple Team: Maximizing Security ROI
+            </h3>
+            <p class="note-excerpt">
+              Cómo combinar ejercicios de Red Team con colaboración Purple Team para mejorar las defensas organizacionales de manera medible.
+            </p>
+            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+          </article>
+          
+          <article class="note-card fade-in-up" tabindex="0">
+            <div class="note-meta">
+              <time datetime="2024-09-28">28 Sep 2024</time>
+              <span>•</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="note-title">
+              Automated Threat Modeling with IaC
+            </h3>
+            <p class="note-excerpt">
+              Integrando threat modeling automatizado en pipelines de Infrastructure as Code para identificar riesgos de seguridad tempranamente.
+            </p>
+            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title fade-in-up">Contacto</h2>
+        <p class="section-subtitle fade-in-up">
+          ¿Proyecto interesante? Hablemos
+        </p>
+        
+        <form class="contact-form fade-in-up" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre *</label>
+            <input type="text" id="name" name="name" class="form-input focus-ring" required aria-describedby="name-error">
+            <div id="name-error" class="form-error visually-hidden" role="alert"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-input focus-ring" required aria-describedby="email-error">
+            <div id="email-error" class="form-error visually-hidden" role="alert"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje *</label>
+            <textarea id="message" name="message" class="form-textarea focus-ring" required aria-describedby="message-error" placeholder="Cuéntame sobre tu proyecto o desafío de seguridad..."></textarea>
+            <div id="message-error" class="form-error visually-hidden" role="alert"></div>
+          </div>
+          
+          <button type="submit" class="form-submit focus-ring">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22,2 15,22 11,13 2,9"></polygon>
+            </svg>
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-signature">
+          <strong>Ignacio Vallejos</strong><br>
+          DevSecOps Engineer & Red Team Specialist
+        </div>
+        
+        <div class="footer-links">
+          <a href="https://github.com/ignaciovallejos" class="footer-link focus-ring" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/ignaciovallejos" class="footer-link focus-ring" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:ignacio@example.com?subject=PGP%20Key" class="footer-link focus-ring">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            PGP Key
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-legal">
+        <p>© 2024 Ignacio Vallejos. Todos los derechos reservados. • <a href="/privacy" class="footer-link focus-ring">Política de Privacidad</a> • <a href="/legal" class="footer-link focus-ring">Aviso Legal</a></p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
