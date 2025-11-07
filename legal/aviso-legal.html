@@ -1,0 +1,90 @@
+<!doctype html><html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aviso Legal — {{NOMBRE_O_RAZÓN_SOCIAL}}</title>
+  <meta name="description" content="Aviso Legal y Términos de Uso de {{NOMBRE_O_RAZÓN_SOCIAL}}.">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/legal.css">
+</head>
+<body>
+<header class="legal-head">
+  <h1>Aviso Legal • Términos de Uso</h1>
+  <p class="muted">Última actualización: {{FECHA_ULTIMA_ACTUALIZACION}}</p>
+</header>
+<main class="legal-container">
+  <aside class="toc" aria-label="Índice">
+    <ol>
+      <li><a href="#objeto">Objeto del sitio</a></li>
+      <li><a href="#uso">Condiciones de uso</a></li>
+      <li><a href="#propiedad">Propiedad intelectual</a></li>
+      <li><a href="#responsabilidad">Limitación de responsabilidad</a></li>
+      <li><a href="#enlaces">Enlaces externos</a></li>
+      <li><a href="#servicios-seguridad">Servicios de seguridad ética</a></li>
+      <li><a href="#cumplimiento">Cumplimiento y marco legal</a></li>
+      <li><a href="#jurisdiccion">Ley aplicable y jurisdicción</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
+  </aside>
+
+  <article class="legal-content">
+    <section id="objeto">
+      <h2>1) Objeto del sitio</h2>
+      <p>Este sitio presenta información profesional, casos y contenidos de {{NOMBRE_O_RAZÓN_SOCIAL}} vinculados a DevSecOps y Red Team.</p>
+    </section>
+
+    <section id="uso">
+      <h2>2) Condiciones de uso</h2>
+      <p>Al navegar aceptás estas condiciones. Te comprometés a no utilizar el sitio para actividades ilícitas, a no intentar vulnerar su seguridad y a abstenerte de conductas que perjudiquen su disponibilidad o integridad.</p>
+    </section>
+
+    <section id="propiedad">
+      <h2>3) Propiedad intelectual</h2>
+      <p>Salvo indicación en contrario, los contenidos, marcas y logotipos son titularidad de {{NOMBRE_O_RAZÓN_SOCIAL}} o se usan con licencia. No se autoriza su reproducción o explotación con fines comerciales sin permiso previo.</p>
+    </section>
+
+    <section id="responsabilidad">
+      <h2>4) Limitación de responsabilidad</h2>
+      <p>Los contenidos se ofrecen "tal cual". Aunque procuramos exactitud y disponibilidad, no garantizamos ausencia total de errores ni interrupciones. El uso de la información es bajo tu propio riesgo.</p>
+    </section>
+
+    <section id="enlaces">
+      <h2>5) Enlaces externos</h2>
+      <p>Los enlaces a sitios de terceros se proveen como referencia. {{NOMBRE_O_RAZÓN_SOCIAL}} no asume responsabilidad por contenidos o políticas de dichos sitios.</p>
+    </section>
+
+    <section id="servicios-seguridad">
+      <h2>6) Servicios de seguridad ética</h2>
+      <p>Las demostraciones, herramientas y técnicas referidas en el sitio tienen fines <strong>educativos y profesionales</strong>. Cualquier prueba de intrusión, pentesting o emulación de adversarios se realiza <strong>exclusivamente bajo autorización previa, por escrito</strong>, y dentro del marco contractual y legal aplicable. Queda terminantemente prohibido su uso en sistemas o activos sin permiso.</p>
+    </section>
+
+    <section id="cumplimiento">
+      <h2>7) Cumplimiento y marco legal</h2>
+      <p>{{NOMBRE_O_RAZÓN_SOCIAL}} actúa conforme a la normativa argentina aplicable (incluida la Ley 25.326 de Protección de Datos Personales) y buenas prácticas de la industria. En caso de trabajar para clientes en otras jurisdicciones, se atenderán las obligaciones locales pertinentes.</p>
+    </section>
+
+    <section id="jurisdiccion">
+      <h2>8) Ley aplicable y jurisdicción</h2>
+      <p>Estas condiciones se rigen por las leyes de la República Argentina. Para cualquier controversia, las partes se someten a los tribunales competentes de <strong>{{JURISDICCION}}</strong>, con renuncia a cualquier otro fuero o jurisdicción que pudiera corresponder.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>9) Contacto</h2>
+      <p>Consultas legales: <a href="mailto:{{EMAIL_CONTACTO}}">{{EMAIL_CONTACTO}}</a>. Domicilio legal: {{DOMICILIO_LEGAL_COMPLETO}}.</p>
+    </section>
+  </article>
+</main>
+<footer class="legal-foot">
+  <a href="/">← Volver al sitio</a>
+</footer>
+</body></html>
+
+<!--
+COMPLETAR DATOS:
+{{NOMBRE_O_RAZÓN_SOCIAL}} = …
+{{CUIT_O_DOCUMENTO}} = …
+{{EMAIL_CONTACTO}} = …
+{{DOMICILIO_LEGAL_COMPLETO}} = …
+{{JURISDICCION}} = …
+{{FECHA_ULTIMA_ACTUALIZACION}} = …
+-->
