@@ -1,0 +1,51 @@
+name: Deploy to Donweb
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+concurrency:
+  group: donweb-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sanity check (index.html)
+        run: |
+          test -f index.html || (echo "❌ No se encontró index.html en la raíz" && exit 1)
+          echo "✅ index.html encontrado"
+
+      # Si tu sitio tuviera build (no es el caso), agregá el paso de build aquí.
+      # - name: Build
+      #   run: npm ci && npm run build
+
+      - name: Deploy via FTP/SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.DONWEB_HOST }}
+          username: ${{ secrets.DONWEB_USER }}
+          password: ${{ secrets.DONWEB_PASS }}
+          protocol: ${{ secrets.DONWEB_PROTOCOL }} # ftp | ftps | sftp (recomendado sftp)
+          local-dir: ./
+          server-dir: ${{ secrets.DONWEB_REMOTE_DIR }} # ej.: /public_html/
+          exclude: |
+            .git*
+            .github/**
+            **/*.md
+            README.md
+            .DS_Store
+            node_modules/**
+            package*.json
+            pnpm-*.yaml
+            vite.config.* 
+            src/**
+            .env
+
+      - name: Post-deploy note
+        run: |
+          echo "✅ Deploy completado. Verifica HTTPS/SSL y caché del navegador."

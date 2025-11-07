@@ -96,6 +96,45 @@ Las fuentes están configuradas en `base.css`. Para cambiar:
 - **Timeline**: Actualizar sección `#timeline`
 - **Skills**: Editar badges en sección `#toolchain`
 
+## 🚀 Deploy a Donweb (GitHub Actions)
+
+### 1. Requisitos previos
+- Dominio apuntado a Donweb y hosting activo.
+- SSL (Let's Encrypt) habilitado desde el panel.
+- `index.html` en la raíz del repo.
+
+### 2. Secrets requeridos (Repo → Settings → Secrets → Actions)
+- `DONWEB_HOST` = ej. `ftp.tudominio.com`
+- `DONWEB_USER` = usuario FTP/SFTP
+- `DONWEB_PASS` = contraseña/token
+- `DONWEB_PROTOCOL` = `sftp` (recomendado) o `ftps` o `ftp`
+- `DONWEB_REMOTE_DIR` = `/public_html/`
+
+### 3. Workflow
+- Cada push a `main` publica el contenido (excepto lo excluido).
+- También podés disparar manualmente en **Actions → Deploy to Donweb → Run workflow**.
+
+### 4. Estructura sugerida
+```
+/index.html
+/assets/css/**
+/assets/js/**
+/assets/img/**
+/assets/videos/**
+/legal/privacidad.html
+/legal/aviso-legal.html
+.htaccess
+```
+
+### 5. Troubleshooting
+- ❌ *"No se encontró index.html"*: confirmá que está en la raíz del repo.
+- ❌ *Permisos o login fallido*: revisá `DONWEB_USER/DONWEB_PASS`, protocolo y ruta `DONWEB_REMOTE_DIR`.
+- ❌ *No veo cambios*: limpiá caché del navegador y verificá que el workflow subió archivos (logs).
+
+### 6. Seguridad
+- No guardes credenciales en el repo. Usá **Secrets**.
+- Preferí **SFTP** sobre FTP/FTPS cuando el plan lo permita.
+
 ## ⚡ Características
 
 ### Rendimiento
