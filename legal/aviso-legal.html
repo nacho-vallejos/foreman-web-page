@@ -4,17 +4,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Aviso Legal — {{NOMBRE_O_RAZÓN_SOCIAL}}</title>
   <meta name="description" content="Aviso Legal y Términos de Uso de {{NOMBRE_O_RAZÓN_SOCIAL}}.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/legal.css">
 </head>
-<body>
+<body class="legal-page">
 <header class="legal-head">
+  <div class="container">
+    <h1>Aviso Legal • Términos de Uso</h1>
+    <p class="muted">Última actualización: {{FECHA_ULTIMA_ACTUALIZACION}}</p>
+  </div>
+</header>
   <h1>Aviso Legal • Términos de Uso</h1>
   <p class="muted">Última actualización: {{FECHA_ULTIMA_ACTUALIZACION}}</p>
 </header>
 <main class="legal-container">
-  <aside class="toc" aria-label="Índice">
-    <ol>
+  <div class="container">
+    <aside class="toc" aria-label="Índice">
+      <h2 class="toc-title">Índice</h2>
+      <ol>
       <li><a href="#objeto">Objeto del sitio</a></li>
       <li><a href="#uso">Condiciones de uso</a></li>
       <li><a href="#propiedad">Propiedad intelectual</a></li>
@@ -24,10 +33,10 @@
       <li><a href="#cumplimiento">Cumplimiento y marco legal</a></li>
       <li><a href="#jurisdiccion">Ley aplicable y jurisdicción</a></li>
       <li><a href="#contacto">Contacto</a></li>
-    </ol>
-  </aside>
+      </ol>
+    </aside>
 
-  <article class="legal-content">
+    <article class="legal-content">
     <section id="objeto">
       <h2>1) Objeto del sitio</h2>
       <p>Este sitio presenta información profesional, casos y contenidos de {{NOMBRE_O_RAZÓN_SOCIAL}} vinculados a DevSecOps y Red Team.</p>
@@ -72,10 +81,19 @@
       <h2>9) Contacto</h2>
       <p>Consultas legales: <a href="mailto:{{EMAIL_CONTACTO}}">{{EMAIL_CONTACTO}}</a>. Domicilio legal: {{DOMICILIO_LEGAL_COMPLETO}}.</p>
     </section>
-  </article>
+    </article>
+  </div>
 </main>
 <footer class="legal-foot">
-  <a href="/">← Volver al sitio</a>
+  <div class="container">
+    <a href="/" class="btn btn-ghost">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M19 12H5"/>
+        <path d="M12 19l-7-7 7-7"/>
+      </svg>
+      Volver al sitio
+    </a>
+  </div>
 </footer>
 </body></html>
 

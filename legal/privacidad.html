@@ -4,17 +4,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Política de Privacidad — {{NOMBRE_O_RAZÓN_SOCIAL}}</title>
   <meta name="description" content="Política de Privacidad de {{NOMBRE_O_RAZÓN_SOCIAL}}.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/legal.css">
 </head>
-<body>
+<body class="legal-page">
 <header class="legal-head">
+  <div class="container">
+    <h1>Política de Privacidad</h1>
+    <p class="muted">Última actualización: {{FECHA_ULTIMA_ACTUALIZACION}}</p>
+  </div>
+</header>
   <h1>Política de Privacidad</h1>
   <p class="muted">Última actualización: {{FECHA_ULTIMA_ACTUALIZACION}}</p>
 </header>
 <main class="legal-container">
-  <aside class="toc" aria-label="Índice">
-    <ol>
+  <div class="container">
+    <aside class="toc" aria-label="Índice">
+      <h2 class="toc-title">Índice</h2>
+      <ol>
       <li><a href="#responsable">Identidad del Responsable</a></li>
       <li><a href="#datos">Datos que tratamos</a></li>
       <li><a href="#finalidades">Finalidades y base legal</a></li>
@@ -26,10 +35,10 @@
       <li><a href="#menores">Menores de edad</a></li>
       <li><a href="#contacto">Contacto y reclamos</a></li>
       <li><a href="#cambios">Cambios a esta política</a></li>
-    </ol>
-  </aside>
+      </ol>
+    </aside>
 
-  <article class="legal-content">
+    <article class="legal-content">
     <section id="responsable">
       <h2>1) Identidad del Responsable</h2>
       <p><strong>{{NOMBRE_O_RAZÓN_SOCIAL}}</strong> ({{CUIT_O_DOCUMENTO}}), con domicilio en <strong>{{DOMICILIO_LEGAL_COMPLETO}}</strong>, es responsable del tratamiento de los datos personales recolectados a través de este sitio.</p>
@@ -97,11 +106,20 @@
       <h2>11) Cambios a esta política</h2>
       <p>Podemos actualizar esta política para reflejar cambios normativos o de servicio. La versión vigente es la publicada con la fecha indicada arriba.</p>
     </section>
-  </article>
+    </article>
+  </div>
 </main>
 
 <footer class="legal-foot">
-  <a href="/">← Volver al sitio</a>
+  <div class="container">
+    <a href="/" class="btn btn-ghost">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M19 12H5"/>
+        <path d="M12 19l-7-7 7-7"/>
+      </svg>
+      Volver al sitio
+    </a>
+  </div>
 </footer>
 </body></html>
 
