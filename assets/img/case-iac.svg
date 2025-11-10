@@ -1,0 +1,46 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0b0c10"/>
+  <g opacity="0.7">
+    <ellipse cx="350" cy="250" rx="80" ry="60" fill="#111317" stroke="#7c5cff" stroke-width="3"/>
+    <ellipse cx="450" cy="250" rx="100" ry="70" fill="#111317" stroke="#7c5cff" stroke-width="3"/>
+    <ellipse cx="400" cy="200" rx="70" ry="50" fill="#111317" stroke="#7c5cff" stroke-width="3"/>
+    <rect x="300" y="250" width="250" height="60" fill="#111317"/>
+    <line x1="300" y1="250" x2="550" y2="250" stroke="#7c5cff" stroke-width="3"/>
+  </g>
+  <g opacity="0.7">
+    <rect x="320" y="350" width="60" height="80" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <rect x="400" y="350" width="60" height="80" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <rect x="480" y="350" width="60" height="80" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <circle cx="335" cy="370" r="4" fill="#10b981"/>
+    <circle cx="365" cy="370" r="4" fill="#10b981"/>
+    <line x1="330" y1="385" x2="370" y2="385" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="330" y1="395" x2="370" y2="395" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="330" y1="405" x2="370" y2="405" stroke="#7c5cff" stroke-width="1"/>
+    <circle cx="415" cy="370" r="4" fill="#10b981"/>
+    <circle cx="445" cy="370" r="4" fill="#10b981"/>
+    <line x1="410" y1="385" x2="450" y2="385" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="410" y1="395" x2="450" y2="395" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="410" y1="405" x2="450" y2="405" stroke="#7c5cff" stroke-width="1"/>
+    <circle cx="495" cy="370" r="4" fill="#10b981"/>
+    <circle cx="525" cy="370" r="4" fill="#10b981"/>
+    <line x1="490" y1="385" x2="530" y2="385" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="490" y1="395" x2="530" y2="395" stroke="#7c5cff" stroke-width="1"/>
+    <line x1="490" y1="405" x2="530" y2="405" stroke="#7c5cff" stroke-width="1"/>
+  </g>
+  <g opacity="0.5" stroke="#7c5cff" stroke-width="2">
+    <line x1="350" y1="310" x2="350" y2="350"/>
+    <line x1="430" y1="310" x2="430" y2="350"/>
+    <line x1="510" y1="310" x2="510" y2="350"/>
+  </g>
+  <g opacity="0.6" stroke="#7c5cff" stroke-width="3" stroke-linecap="round">
+    <path d="M 250 200 L 230 220 L 250 240"/>
+    <path d="M 550 200 L 570 220 L 550 240"/>
+  </g>
+  <defs>
+    <radialGradient id="cloudglow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#7c5cff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="400" cy="280" rx="200" ry="150" fill="url(#cloudglow)"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0b0c10"/>
+  <g opacity="0.7">
+    <path d="M 400 150 L 520 200 L 520 320 C 520 380 480 420 400 450 C 320 420 280 380 280 320 L 280 200 Z" 
+          fill="#111317" stroke="#7c5cff" stroke-width="3"/>
+  </g>
+  <g opacity="0.5" stroke="#7c5cff" stroke-width="2" fill="none">
+    <path d="M 340 280 Q 360 260 380 280 T 420 280 T 460 280"/>
+    <path d="M 340 300 Q 360 280 380 300 T 420 300 T 460 300"/>
+    <path d="M 340 320 Q 360 300 380 320 T 420 320 T 460 320"/>
+  </g>
+  <g opacity="0.8">
+    <circle cx="350" cy="240" r="8" fill="#ef4444">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="260" r="8" fill="#f59e0b">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="380" cy="350" r="8" fill="#10b981">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0.6">
+    <line x1="400" y1="300" x2="480" y2="240" stroke="#7c5cff" stroke-width="2">
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        from="0 400 300"
+        to="360 400 300"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </line>
+  </g>
+  <g opacity="0.6" fill="#7c5cff">
+    <rect x="300" y="420" width="40" height="80" rx="2"/>
+    <rect x="350" y="450" width="40" height="50" rx="2"/>
+    <rect x="400" y="430" width="40" height="70" rx="2"/>
+    <rect x="450" y="460" width="40" height="40" rx="2"/>
+  </g>
+  <g opacity="0.8" stroke="#10b981" stroke-width="4" stroke-linecap="round">
+    <polyline points="360,290 385,315 440,260"/>
+  </g>
+  <defs>
+    <radialGradient id="shieldglow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#7c5cff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="400" cy="300" rx="180" ry="200" fill="url(#shieldglow)"/>
+</svg>

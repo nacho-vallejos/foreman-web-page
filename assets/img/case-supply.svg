@@ -1,0 +1,36 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0b0c10"/>
+  <g opacity="0.7">
+    <ellipse cx="200" cy="280" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(-30 200 280)"/>
+    <ellipse cx="200" cy="320" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(30 200 320)"/>
+    <ellipse cx="320" cy="280" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(-30 320 280)"/>
+    <ellipse cx="320" cy="320" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(30 320 320)"/>
+    <ellipse cx="440" cy="280" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(-30 440 280)"/>
+    <ellipse cx="440" cy="320" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(30 440 320)"/>
+    <ellipse cx="560" cy="280" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(-30 560 280)"/>
+    <ellipse cx="560" cy="320" rx="40" ry="60" fill="none" stroke="#7c5cff" stroke-width="4" transform="rotate(30 560 320)"/>
+  </g>
+  <g opacity="0.8">
+    <rect x="190" y="290" width="20" height="25" rx="2" fill="#111317" stroke="#10b981" stroke-width="2"/>
+    <path d="M 195 290 L 195 285 A 5 5 0 0 1 205 285 L 205 290" fill="none" stroke="#10b981" stroke-width="2"/>
+    <rect x="310" y="290" width="20" height="25" rx="2" fill="#111317" stroke="#10b981" stroke-width="2"/>
+    <path d="M 315 290 L 315 285 A 5 5 0 0 1 325 285 L 325 290" fill="none" stroke="#10b981" stroke-width="2"/>
+    <rect x="430" y="290" width="20" height="25" rx="2" fill="#111317" stroke="#10b981" stroke-width="2"/>
+    <path d="M 435 290 L 435 285 A 5 5 0 0 1 445 285 L 445 290" fill="none" stroke="#10b981" stroke-width="2"/>
+    <rect x="550" y="290" width="20" height="25" rx="2" fill="#111317" stroke="#10b981" stroke-width="2"/>
+    <path d="M 555 290 L 555 285 A 5 5 0 0 1 565 285 L 565 290" fill="none" stroke="#10b981" stroke-width="2"/>
+  </g>
+  <g opacity="0.6" stroke="#10b981" stroke-width="2" stroke-linecap="round">
+    <polyline points="185,305 192,312 208,296"/>
+    <polyline points="305,305 312,312 328,296"/>
+    <polyline points="425,305 432,312 448,296"/>
+    <polyline points="545,305 552,312 568,296"/>
+  </g>
+  <defs>
+    <radialGradient id="supplyglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="380" cy="300" rx="250" ry="120" fill="url(#supplyglow)"/>
+</svg>

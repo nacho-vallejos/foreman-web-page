@@ -1,0 +1,55 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0b0c10"/>
+  <g opacity="0.7">
+    <circle cx="400" cy="300" r="60" fill="#111317" stroke="#7c5cff" stroke-width="3"/>
+    <circle cx="400" cy="300" r="40" fill="none" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+  </g>
+  <g opacity="0.7" fill="#7c5cff">
+    <rect x="395" y="230" width="10" height="20" rx="2"/>
+    <rect x="395" y="350" width="10" height="20" rx="2"/>
+    <rect x="330" y="295" width="20" height="10" rx="2"/>
+    <rect x="450" y="295" width="20" height="10" rx="2"/>
+    <rect x="345" y="245" width="10" height="20" rx="2" transform="rotate(45 350 255)"/>
+    <rect x="445" y="245" width="10" height="20" rx="2" transform="rotate(-45 450 255)"/>
+    <rect x="345" y="335" width="10" height="20" rx="2" transform="rotate(-45 350 345)"/>
+    <rect x="445" y="335" width="10" height="20" rx="2" transform="rotate(45 450 345)"/>
+  </g>
+  <g opacity="0.6">
+    <rect x="370" y="120" width="60" height="50" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <line x1="400" y1="170" x2="400" y2="240" stroke="#7c5cff" stroke-width="2"/>
+    <rect x="540" y="275" width="60" height="50" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <line x1="460" y1="300" x2="540" y2="300" stroke="#7c5cff" stroke-width="2"/>
+    <rect x="370" y="430" width="60" height="50" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <line x1="400" y1="360" x2="400" y2="430" stroke="#7c5cff" stroke-width="2"/>
+    <rect x="200" y="275" width="60" height="50" rx="4" fill="#111317" stroke="#7c5cff" stroke-width="2"/>
+    <line x1="260" y1="300" x2="340" y2="300" stroke="#7c5cff" stroke-width="2"/>
+  </g>
+  <g opacity="0.5" fill="#7c5cff">
+    <circle cx="400" cy="205" r="4">
+      <animate attributeName="cy" values="205;240" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="300" r="4">
+      <animate attributeName="cx" values="500;460" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="395" r="4">
+      <animate attributeName="cy" values="395;360" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="300" r="4">
+      <animate attributeName="cx" values="300;340" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0.8" stroke="#10b981" stroke-width="2">
+    <polyline points="385,295 395,305 415,285" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <radialGradient id="soarglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c5cff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <circle cx="400" cy="300" r="180" fill="url(#soarglow)"/>
+</svg>

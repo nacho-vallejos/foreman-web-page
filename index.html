@@ -94,7 +94,6 @@
           <a href="#services" class="nav-link focus-ring">Qué hago</a>
           <a href="#cases" class="nav-link focus-ring">Casos</a>
           <a href="#toolchain" class="nav-link focus-ring">Toolchain</a>
-          <a href="#repos" class="nav-link focus-ring">Repos</a>
           <a href="#timeline" class="nav-link focus-ring">Timeline</a>
           <a href="#notes" class="nav-link focus-ring">Notas</a>
           <a href="#contact" class="nav-link focus-ring">Contacto</a>
@@ -124,7 +123,6 @@
         <a href="#services" class="mobile-nav-link focus-ring">Qué hago</a>
         <a href="#cases" class="mobile-nav-link focus-ring">Casos</a>
         <a href="#toolchain" class="mobile-nav-link focus-ring">Toolchain</a>
-        <a href="#repos" class="mobile-nav-link focus-ring">Repos</a>
         <a href="#timeline" class="mobile-nav-link focus-ring">Timeline</a>
         <a href="#notes" class="mobile-nav-link focus-ring">Notas</a>
         <a href="#contact" class="mobile-nav-link focus-ring">Contacto</a>
@@ -235,7 +233,7 @@
           <!-- 6 tarjetas placeholder; los datos definitivos se leen de assets/data/cases.json -->
           <article class="case-card card-tilt" data-case-id="pipelines-secure">
             <figure class="case-card__media">
-              <img src="/assets/img/case-pipelines.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-pipelines.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -260,7 +258,7 @@
 
           <article class="case-card card-tilt" data-case-id="redteam-ad">
             <figure class="case-card__media">
-              <img src="/assets/img/case-redteam.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-redteam.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -283,7 +281,7 @@
 
           <article class="case-card card-tilt" data-case-id="supply-chain">
             <figure class="case-card__media">
-              <img src="/assets/img/case-supply.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-supply.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -307,7 +305,7 @@
 
           <article class="case-card card-tilt" data-case-id="cloud-iac">
             <figure class="case-card__media">
-              <img src="/assets/img/case-iac.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-iac.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -330,7 +328,7 @@
 
           <article class="case-card card-tilt" data-case-id="blue-detections">
             <figure class="case-card__media">
-              <img src="/assets/img/case-detections.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-detections.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -353,7 +351,7 @@
 
           <article class="case-card card-tilt" data-case-id="soar-lite">
             <figure class="case-card__media">
-              <img src="/assets/img/case-soar.webp" alt="" loading="lazy" width="800" height="600">
+              <img src="/assets/img/case-soar.svg" alt="" loading="lazy" width="800" height="600">
             </figure>
             <div class="case-card__body">
               <h3 class="case-card__title">
@@ -440,62 +438,6 @@
             </table>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <!-- Repos Section -->
-    <section id="repos" class="repos" aria-label="Repos destacados">
-      <div class="container">
-        <header class="section-head">
-          <h2 class="section-title" data-reveal>Repos destacados</h2>
-          <p class="section-sub" data-reveal>Código público relevante para DevSecOps y Red Team.</p>
-        </header>
-
-        <div class="repos__controls">
-          <form id="repo-controls" class="repo-controls" role="search" aria-label="Buscar repos en GitHub">
-            <div class="field">
-              <label for="gh-user">GitHub</label>
-              <input id="gh-user" name="gh-user" type="text" placeholder="usuario" autocomplete="username" />
-            </div>
-            <div class="field">
-              <label for="q">Buscar</label>
-              <input id="q" name="q" type="search" placeholder="trivy, terraform, nuclei…" />
-            </div>
-            <div class="field">
-              <label for="topic">Topic</label>
-              <select id="topic" name="topic">
-                <option value="all">Todos</option>
-                <option value="devsecops">devsecops</option>
-                <option value="red-team">red-team</option>
-                <option value="security">security</option>
-                <option value="pentest">pentest</option>
-                <option value="kubernetes">kubernetes</option>
-                <option value="terraform">terraform</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="sort">Ordenar</label>
-              <select id="sort" name="sort">
-                <option value="stars">Más estrellas</option>
-                <option value="updated">Última actualización</option>
-              </select>
-            </div>
-            <button class="btn" type="submit">Aplicar</button>
-          </form>
-        </div>
-
-        <!-- grid / resultados -->
-        <ul id="repo-grid" class="repo-grid" aria-live="polite" aria-busy="false"></ul>
-
-        <!-- paginación -->
-        <nav class="repo-pager" aria-label="Paginación de repos">
-          <button class="btn btn-ghost" id="prev-page" disabled>Anterior</button>
-          <span id="page-info" role="status" aria-live="polite">1 / 1</span>
-          <button class="btn" id="next-page" disabled>Siguiente</button>
-        </nav>
-
-        <!-- avisos -->
-        <p id="repo-note" class="repo-note" hidden></p>
       </div>
     </section>
     
