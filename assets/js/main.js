@@ -9,6 +9,7 @@ import { initAccessibility } from './a11y.js';
 import { initCases } from './cases.js';
 import { initSkills } from './skills.js';
 import { initRepos } from './repos.js';
+import { initI18n } from './i18n.js';
 
 // Estado global de la aplicación
 const app = {
@@ -42,6 +43,7 @@ function init() {
     initCases();
     initSkills();
     initRepos();
+    initI18n();
     
     // Configurar listeners globales
     setupGlobalListeners();
