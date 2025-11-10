@@ -233,7 +233,7 @@
 }
 
 .hero__content {
-  padding-block: clamp(4rem, 8svh, 8rem);
+  padding-block: 2rem;
   text-align: left;
 }
 
