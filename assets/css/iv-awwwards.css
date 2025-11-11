@@ -47,3 +47,64 @@
 }
 
 /* Tips de paleta: cambia --iv-acc-0/1/2 para variar tonos; ajustá opacidades de radiales en .iv-backdrop para más/menos contraste. */
+
+/* Gradiente animado para hero title */
+.hero__title {
+  background: linear-gradient(135deg, 
+    var(--iv-acc-0) 0%, 
+    var(--iv-acc-1) 50%, 
+    var(--iv-acc-2) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: iv-gradientShift 8s ease infinite;
+}
+
+@keyframes iv-gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Fallback para navegadores sin soporte */
+@supports not (background-clip: text) {
+  .hero__title {
+    color: var(--iv-acc-0);
+  }
+}
+
+/* Hero title con gradiente animado - visible inmediatamente */
+.hero__title {
+  background: linear-gradient(135deg, 
+    var(--iv-acc-0) 0%, 
+    var(--iv-acc-1) 50%, 
+    var(--iv-acc-2) 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: iv-gradientShift 8s ease-in-out infinite;
+  opacity: 1 !important;
+}
+
+@keyframes iv-gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* El stroke-text (el //) mantiene el color original */
+.hero__title .stroke-text {
+  -webkit-text-fill-color: currentColor;
+  background: none;
+}
+
+/* Deshabilitar split en hero title */
+.hero__title.iv-split span {
+  display: inline !important;
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  animation: none !important;
+}

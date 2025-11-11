@@ -89,8 +89,11 @@ function tiltify(){
 }
 
 function autoTargetHero(){
+  // NO aplicar splitify al h1 del hero - se muestra con gradiente inmediatamente
   const h1=d.querySelector("[data-iv-hero] h1, main h1, header ~ main h1, h1");
-  if(h1) splitify(h1);
+  // if(h1) splitify(h1); // Deshabilitado para mostrar título con gradiente
+  
+  // Aplicar splitify solo al subtitle (si existe)
   let sub=h1?h1.nextElementSibling:null;
   if(sub && (sub.tagName==="P"||sub.tagName==="H2"||sub.dataset?.subtitle)){ splitify(sub); }
 }
