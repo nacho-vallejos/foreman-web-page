@@ -1,0 +1,19 @@
+{
+  "name": "nacho-vallejos-web-hardened",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio personal con hardening DevSecOps",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "security:audit": "npm audit",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-security": "^3.0.0"
+  },
+  "keywords": ["devsecops", "security", "hardened", "portfolio"],
+  "author": "Ignacio Vallejos",
+  "license": "UNLICENSED"
+}

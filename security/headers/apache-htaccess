@@ -1,0 +1,33 @@
+# Apache .htaccess - Security Headers
+# Copy to root directory as .htaccess
+
+<IfModule mod_headers.c>
+  # HSTS (HTTP Strict Transport Security) - Force HTTPS por 1 año
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  
+  # Prevenir MIME sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Clickjacking protection
+  Header set X-Frame-Options "DENY"
+  
+  # Política de referrer
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Permissions Policy - Deshabilitar APIs no usadas
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), usb=(), payment=(), interest-cohort=()"
+  
+  # Content Security Policy (ajustar según necesidad)
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; connect-src 'self'; upgrade-insecure-requests"
+  
+  # XSS Protection (legacy pero útil)
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Deshabilitar listado de directorios
+Options -Indexes
+
+# Proteger archivos sensibles
+<FilesMatch "(^\.git|^\.env|package\.json|package-lock\.json|composer\.(json|lock)|README\.md)">
+  Require all denied
+</FilesMatch>

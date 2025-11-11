@@ -2,3 +2,28 @@
 node_modules/
 .env
 dist/*.pem
+
+# Security & DevSecOps
+node_modules/
+npm-debug.log*
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

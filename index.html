@@ -11,6 +11,13 @@
   <meta name="author" content="Ignacio Vallejos">
   <meta name="robots" content="index, follow">
   
+  <!-- Security Headers (DevSecOps Hardening) -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; connect-src 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), usb=(), payment=(), interest-cohort=()">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Ignacio Vallejos — DevSecOps Engineer & Red Team Specialist">
   <meta property="og:description" content="DevSecOps Engineer especializado en Red Team operations. Experto en seguridad ofensiva, automatización de infraestructura segura y operaciones de penetration testing.">
@@ -661,5 +668,12 @@
   <script type="module" src="/assets/js/main.js"></script>
   <!-- Awwwards effects (auto-injected, non-destructive) -->
   <script src="/assets/js/iv-awwwards.js" defer></script>
+
+  
+  <!-- Security Layer (DevSecOps) -->
+  <script src="/assets/vendor/dompurify.min.js" defer></script>
+  <script src="/assets/js/security/iv-sanitize.js" defer></script>
+  <script src="/assets/js/security/iv-secure-links.js" defer></script>
+  <script src="/assets/js/security/iv-forms.js" defer></script>
 </body>
 </html>

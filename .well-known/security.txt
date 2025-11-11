@@ -1,0 +1,6 @@
+Contact: mailto:security@ignaciovallejos.dev
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: es, en
+Canonical: https://ignaciovallejos.dev/.well-known/security.txt
+Acknowledgments: https://ignaciovallejos.dev/security/acknowledgments
+Hiring: https://ignaciovallejos.dev/#contact
