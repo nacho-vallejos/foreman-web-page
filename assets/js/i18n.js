@@ -28,6 +28,8 @@ const translations = {
     'services.devsecops.desc': 'Pipelines con gates de seguridad, observabilidad y hardening de supply chain.',
     'services.redteam.title': 'Red Team',
     'services.redteam.desc': 'Emulación de adversarios mapeada a MITRE ATT&CK y reportes ejecutivos claros.',
+    'services.cta': 'Ver casos',
+    'services.cta.contact': 'Contactar',
     
     // Cases
     'cases.title': 'Casos',
@@ -95,6 +97,8 @@ const translations = {
     'services.devsecops.desc': 'Pipelines with security gates, observability and supply chain hardening.',
     'services.redteam.title': 'Red Team',
     'services.redteam.desc': 'Adversary emulation mapped to MITRE ATT&CK with clear executive reports.',
+    'services.cta': 'View cases',
+    'services.cta.contact': 'Contact',
     
     // Cases
     'cases.title': 'Cases',
@@ -162,6 +166,8 @@ const translations = {
     'services.devsecops.desc': 'خطوط الأنابيب مع بوابات الأمان والمراقبة وتقوية سلسلة التوريد.',
     'services.redteam.title': 'الفريق الأحمر',
     'services.redteam.desc': 'محاكاة الخصم المعينة إلى MITRE ATT&CK مع تقارير تنفيذية واضحة.',
+    'services.cta': 'عرض الحالات',
+    'services.cta.contact': 'اتصل',
     
     // Cases
     'cases.title': 'الحالات',
