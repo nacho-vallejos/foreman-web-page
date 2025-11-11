@@ -267,6 +267,9 @@ function setLanguage(lang) {
   });
   
   applyTranslations(lang);
+  
+  // Disparar evento para que otros módulos actualicen
+  window.dispatchEvent(new CustomEvent(\'languageChanged\', { detail: { lang } }));
 }
 
 function applyTranslations(lang) {
@@ -283,3 +286,9 @@ function applyTranslations(lang) {
     }
   });
 }
+// Función para obtener traducciones dinámicamente
+export function translate(key) {
+  const t = translations[currentLang];
+  return t[key] || key;
+}
+

@@ -2,7 +2,24 @@
  * Skills.js - Toolchain interactivo con radar chart en canvas
  */
 
+import { translate } from \'./i18n.js\';
+
 let SKILLS = null;
+
+
+  // Mapeo de categorías a claves de traducción
+  function translateCategory(label) {
+    const map = {
+      'DevSecOps': 'categories.devsecops',
+      'Red Team': 'categories.redteam',
+      'Cloud/Infra': 'categories.cloud',
+      'Observabilidad': 'categories.observability',
+      'Observability': 'categories.observability',
+      'Programación': 'categories.programming',
+      'Programming': 'categories.programming'
+    };
+    return translate(map[label] || label);
+  }
 
 export async function initSkills() {
   const badgesEl = document.getElementById('skill-badges');
@@ -58,6 +75,13 @@ export async function initSkills() {
       autoResize(canvas); 
       drawRadar(); 
     });
+  
+  // Redibujar radar cuando cambia el idioma
+  window.addEventListener('languageChanged', () => {
+    drawRadar();
+    renderBadges();
+    renderTable();
+  });
   }, { passive: true });
 
   function renderBadges(){
@@ -66,9 +90,9 @@ export async function initSkills() {
     const items = filtered(SKILLS.items, state.filter);
     items.forEach(s => {
       const li = document.createElement('li');
-      li.innerHTML = `<span class="tool">${s.name}</span>
-                      <span class="pill">${s.categoryLabel}</span>
-                      <span class="level">Lvl ${s.level}</span>`;
+      li.innerHTML = `<span class=\"tool\">${s.name}</span>
+                          <span class=\"pill\">${translateCategory(s.categoryLabel)}</span>
+                          <span class=\"level\">Lvl ${s.level}</span>`;
       badgesEl.appendChild(li);
     });
     badgesEl.setAttribute('aria-busy','false');
@@ -79,7 +103,7 @@ export async function initSkills() {
     const rows = aggregateByArea(SKILLS.items);
     rows.forEach(r => {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${r.areaLabel}</td><td>${r.level}</td>`;
+      tr.innerHTML = `<td>${translateCategory(r.areaLabel)}</td><td>${r.level}</td>`;
       tableBody.appendChild(tr);
     });
   }
@@ -126,7 +150,7 @@ export async function initSkills() {
       ctx.save();
       ctx.textAlign = x < cx ? 'right' : (x > cx ? 'left' : 'center');
       ctx.textBaseline = y < cy ? 'bottom' : (y > cy ? 'top' : 'middle');
-      ctx.fillText(ax.areaLabel, x, y);
+      ctx.fillText(translateCategory(ax.areaLabel), x, y);
       ctx.restore();
 
       // eje radial
