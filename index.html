@@ -80,56 +80,73 @@
   </div>
   
   <!-- Header -->
-  <header class="header" role="banner">
-    <div class="container">
-      <div class="header-content">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="#hero" class="focus-ring">Ignacio Vallejos — DevSecOps / Red Team</a>
-        </div>
-        
-        <!-- Desktop Navigation -->
-        <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
-          <a href="#hero" class="nav-link focus-ring">Home</a>
-          <a href="#services" class="nav-link focus-ring">Qué hago</a>
-          <a href="#cases" class="nav-link focus-ring">Casos</a>
-          <a href="#toolchain" class="nav-link focus-ring">Toolchain</a>
-          <a href="#timeline" class="nav-link focus-ring">Timeline</a>
-          <a href="#notes" class="nav-link focus-ring">Notas</a>
-          <a href="#contact" class="nav-link focus-ring">Contacto</a>
-        </nav>
-        
-        <!-- Header Actions -->
-        <div class="header-actions">
-          <button class="lang-toggle focus-ring" aria-label="Cambiar idioma" title="Cambiar idioma">
-            ES
-          </button>
-          
-          <button class="mobile-menu-button focus-ring" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú de navegación">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
-        </div>
+  <nav class="navbar" role="banner">
+    <div class="navbar-left">
+      <span class="brand">Ignacio Vallejos — DevSecOps / Red Team</span>
+    </div>
+    <div class="navbar-center">
+      <ul class="nav-links">
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#services" data-i18n="nav.services">Qué hago</a></li>
+        <li><a href="#cases" data-i18n="nav.cases">Casos</a></li>
+        <li><a href="#toolchain" data-i18n="nav.toolchain">Toolchain</a></li>
+        <li><a href="#timeline" data-i18n="nav.timeline">Timeline</a></li>
+        <li><a href="#notes" data-i18n="nav.notes">Notas</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es" aria-label="Español">
+          <span class="flag">🇦🇷</span>
+          <span class="lang-code">ES</span>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          <span class="flag">��🇸</span>
+          <span class="lang-code">EN</span>
+        </button>
+        <button class="lang-btn" data-lang="ar" aria-label="العربية">
+          <span class="flag">🇸🇦</span>
+          <span class="lang-code">AR</span>
+        </button>
       </div>
     </div>
-    
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Navegación móvil">
-      <div class="mobile-nav">
-        <a href="#hero" class="mobile-nav-link focus-ring">Home</a>
-        <a href="#services" class="mobile-nav-link focus-ring">Qué hago</a>
-        <a href="#cases" class="mobile-nav-link focus-ring">Casos</a>
-        <a href="#toolchain" class="mobile-nav-link focus-ring">Toolchain</a>
-        <a href="#timeline" class="mobile-nav-link focus-ring">Timeline</a>
-        <a href="#notes" class="mobile-nav-link focus-ring">Notas</a>
-        <a href="#contact" class="mobile-nav-link focus-ring">Contacto</a>
+  </nav>
+
+  <!-- Header -->
+  <nav class="navbar" role="banner">
+    <div class="navbar-left">
+      <span class="brand">Ignacio Vallejos — DevSecOps / Red Team</span>
+    </div>
+    <div class="navbar-center">
+      <ul class="nav-links">
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#services" data-i18n="nav.services">Qué hago</a></li>
+        <li><a href="#cases" data-i18n="nav.cases">Casos</a></li>
+        <li><a href="#toolchain" data-i18n="nav.toolchain">Toolchain</a></li>
+        <li><a href="#timeline" data-i18n="nav.timeline">Timeline</a></li>
+        <li><a href="#notes" data-i18n="nav.notes">Notas</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es" aria-label="Español">
+          <span class="flag">🇦🇷</span>
+          <span class="lang-code">ES</span>
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          <span class="flag">��🇸</span>
+          <span class="lang-code">EN</span>
+        </button>
+        <button class="lang-btn" data-lang="ar" aria-label="العربية">
+          <span class="flag">🇸🇦</span>
+          <span class="lang-code">AR</span>
+        </button>
       </div>
-    </nav>
-  </header>
-  
+    </div>
+  </nav>
+
   <!-- Main Content -->
   <main id="main" role="main">
     <!-- Hero Section -->
