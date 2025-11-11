@@ -2,7 +2,7 @@
  * Skills.js - Toolchain interactivo con radar chart en canvas
  */
 
-import { translate } from \'./i18n.js\';
+import { translate } from './i18n.js';
 
 let SKILLS = null;
 

@@ -269,7 +269,7 @@ function setLanguage(lang) {
   applyTranslations(lang);
   
   // Disparar evento para que otros módulos actualicen
-  window.dispatchEvent(new CustomEvent(\'languageChanged\', { detail: { lang } }));
+  window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
 }
 
 function applyTranslations(lang) {
