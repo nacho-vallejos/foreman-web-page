@@ -43,10 +43,17 @@ function injectBackdrop(){
 
 function splitify(el){
   if(!el || el.dataset.ivSplitDone==="1") return;
-  const txt=(el.textContent||"").trim(); el.textContent="";
+  const txt=(el.textContent||"").trim(); 
+  if(txt.length > 100) return; // Skip si es muy largo
+  el.textContent="";
   const frag=d.createDocumentFragment();
   [...txt].forEach((ch,i)=>{
-    const s=d.createElement("span"); s.textContent=ch; s.style.animation=`iv-rise .9s cubic-bezier(.2,.75,.2,1) ${i*0.02}s forwards`;
+    const s=d.createElement("span"); 
+    s.textContent=ch;
+    // Establecer estado inicial inline para garantizar que empiece invisible
+    s.style.cssText = `display:inline-block; opacity:0; transform:translateY(0.6em) rotate(2deg); filter:blur(3px);`;
+    // Aplicar animación después
+    s.style.animation=`iv-rise .9s cubic-bezier(.2,.75,.2,1) ${i*0.02}s forwards`;
     frag.appendChild(s);
   });
   el.appendChild(frag);
