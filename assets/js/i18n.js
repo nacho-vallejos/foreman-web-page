@@ -85,6 +85,7 @@ const translations = {
     'contact.email': 'Email',
     'contact.linkedin': 'LinkedIn',
     'contact.github': 'GitHub',
+    'contact.form.message.placeholder': 'Cuéntame sobre tu proyecto o desafío de seguridad...',
     
     // Footer
     'footer.rights': 'Todos los derechos reservados.'
@@ -172,6 +173,7 @@ const translations = {
     'contact.email': 'Email',
     'contact.linkedin': 'LinkedIn',
     'contact.github': 'GitHub',
+    'contact.form.message.placeholder': 'Tell me about your security project or challenge...',
     
     // Footer
     'footer.rights': 'All rights reserved.'
@@ -259,6 +261,7 @@ const translations = {
     'contact.email': 'البريد الإلكتروني',
     'contact.linkedin': 'لينكد إن',
     'contact.github': 'جيت هاب',
+    'contact.form.message.placeholder': 'أخبرني عن مشروع أو تحدي الأمان الخاص بك...',
     
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.'
@@ -307,6 +310,15 @@ function applyTranslations(lang) {
       } else {
         el.textContent = t[key];
       }
+    }
+  });
+  
+  // Translate placeholders
+  const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+  placeholderElements.forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang][key]) {
+      el.placeholder = translations[lang][key];
     }
   });
 }
