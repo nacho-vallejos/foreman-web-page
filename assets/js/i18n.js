@@ -66,6 +66,14 @@ const translations = {
     'timeline.2025.desc': 'Asesoramiento en implementación segura de soluciones Azure, defensa en profundidad y cumplimiento para sectores regulados.',
     'timeline.2024.title': 'Lead DevSecOps Engineer',
     'timeline.2024.desc': 'Diseño de pipelines seguros y ejercicios de Red Team en entorno enterprise.',
+    'timeline.2023.title': 'Certificación OSCP',
+    'timeline.2023.desc': 'Obtención de certificación OSCP (Offensive Security Certified Professional), validando habilidades avanzadas en penetration testing y exploitation.',
+    'timeline.2022.title': 'Especialista Red Team',
+    'timeline.2022.desc': 'Especialización en Red Team operations, desarrollando capacidades de threat emulation y adversary simulation para Fortune 500 companies.',
+    'timeline.2021.title': 'Arquitecto de Seguridad Cloud',
+    'timeline.2021.desc': 'Diseño e implementación de arquitecturas de seguridad multi-cloud, enfocándose en Zero Trust y container security en entornos Kubernetes.',
+    'timeline.2019.title': 'Inicio en DevSecOps',
+    'timeline.2019.desc': 'Inicio en DevSecOps como Security Engineer, automatizando procesos de seguridad y integrando security testing en pipelines CI/CD.',
     
     // Notes
     'notes.title': 'Notas',
@@ -145,6 +153,14 @@ const translations = {
     'timeline.2025.desc': 'Advisory on secure implementation of Azure solutions, defense in depth and compliance for regulated sectors.',
     'timeline.2024.title': 'Lead DevSecOps Engineer',
     'timeline.2024.desc': 'Design of secure pipelines and Red Team exercises in enterprise environment.',
+    'timeline.2023.title': 'OSCP Certification',
+    'timeline.2023.desc': 'Obtained OSCP (Offensive Security Certified Professional) certification, validating advanced skills in penetration testing and exploitation.',
+    'timeline.2022.title': 'Red Team Specialist',
+    'timeline.2022.desc': 'Specialization in Red Team operations, developing threat emulation and adversary simulation capabilities for Fortune 500 companies.',
+    'timeline.2021.title': 'Cloud Security Architect',
+    'timeline.2021.desc': 'Design and implementation of multi-cloud security architectures, focusing on Zero Trust and container security in Kubernetes environments.',
+    'timeline.2019.title': 'DevSecOps Journey Begins',
+    'timeline.2019.desc': 'Started in DevSecOps as Security Engineer, automating security processes and integrating security testing into CI/CD pipelines.',
     
     // Notes
     'notes.title': 'Notes',
@@ -224,6 +240,14 @@ const translations = {
     'timeline.2025.desc': 'الاستشارات حول التنفيذ الآمن لحلول Azure والدفاع المتعمق والامتثال للقطاعات المنظمة.',
     'timeline.2024.title': 'مهندس DevSecOps رئيسي',
     'timeline.2024.desc': 'تصميم خطوط أنابيب آمنة وتمارين الفريق الأحمر في بيئة المؤسسات.',
+    'timeline.2023.title': 'شهادة OSCP',
+    'timeline.2023.desc': 'الحصول على شهادة OSCP (محترف الأمن الهجومي المعتمد)، التحقق من المهارات المتقدمة في اختبار الاختراق والاستغلال.',
+    'timeline.2022.title': 'أخصائي الفريق الأحمر',
+    'timeline.2022.desc': 'التخصص في عمليات الفريق الأحمر، تطوير قدرات محاكاة التهديدات والخصوم لشركات Fortune 500.',
+    'timeline.2021.title': 'مهندس أمن السحابة',
+    'timeline.2021.desc': 'تصميم وتنفيذ هندسة الأمن متعددة السحابات، مع التركيز على الثقة الصفرية وأمن الحاويات في بيئات Kubernetes.',
+    'timeline.2019.title': 'بداية رحلة DevSecOps',
+    'timeline.2019.desc': 'البدء في DevSecOps كمهندس أمن، أتمتة عمليات الأمان ودمج اختبار الأمان في خطوط CI/CD.',
     
     // Notes
     'notes.title': 'ملاحظات',
