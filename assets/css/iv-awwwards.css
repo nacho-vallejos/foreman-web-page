@@ -8,46 +8,122 @@
 */
 
 :root{
-  --iv-bg-0:#0a0b10; --iv-fg-0:#e9eef8; --iv-fg-1:#a8b2c7;
   --iv-acc-0:#7b5cff; --iv-acc-1:#41e2ff; --iv-acc-2:#ff7a59;
 }
-html,body{ background:var(--iv-bg-0); color:var(--iv-fg-0); }
+
+/* NO modificamos html,body para no pisar tus estilos existentes */
+
 .iv-backdrop{
   position:fixed; inset:0; z-index:-3; overflow:hidden;
   background:
-    radial-gradient(1200px 800px at 110% -10%, rgba(123,92,255,.18), transparent 60%),
-    radial-gradient(1000px 700px at -10% 10%, rgba(65,226,255,.14), transparent 55%),
-    radial-gradient(1000px 700px at 50% 120%, rgba(255,122,89,.12), transparent 55%),
-    linear-gradient(180deg, #0a0b10 0%, #0b0d13 50%, #0a0b10 100%);
+    radial-gradient(1200px 800px at 110% -10%, rgba(123,92,255,.08), transparent 60%),
+    radial-gradient(1000px 700px at -10% 10%, rgba(65,226,255,.06), transparent 55%),
+    radial-gradient(1000px 700px at 50% 120%, rgba(255,122,89,.06), transparent 55%);
   animation: iv-bgShift 22s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 @keyframes iv-bgShift{ 0%{ filter:hue-rotate(0) saturate(110%);} 100%{ filter:hue-rotate(10deg) saturate(115%);} }
-.iv-blob{ position:absolute; filter: blur(60px); opacity:.26; mix-blend-mode: screen; }
+
+.iv-blob{ 
+  position:absolute; 
+  filter: blur(80px); 
+  opacity:.15; 
+  mix-blend-mode: screen;
+  will-change: transform;
+}
 .iv-blob::before{
   content:""; position:absolute; inset:0;
   background: radial-gradient(closest-side, var(--iv-c) 0%, rgba(0,0,0,0) 65%);
-  transform: translateZ(0); animation: iv-float var(--iv-dur,24s) ease-in-out infinite;
+  transform: translateZ(0); 
+  animation: iv-float var(--iv-dur,24s) ease-in-out infinite;
 }
-@keyframes iv-float{ 0%{ transform: translate(-6%,-6%) scale(1);} 50%{ transform: translate(6%,6%) scale(1.08);} 100%{ transform: translate(-6%,-6%) scale(1);} }
+@keyframes iv-float{ 
+  0%{ transform: translate(-6%,-6%) scale(1);} 
+  50%{ transform: translate(6%,6%) scale(1.08);} 
+  100%{ transform: translate(-6%,-6%) scale(1);} 
+}
 
-#iv-grain{ position:fixed; inset:0; z-index:-1; opacity:.08; mix-blend-mode:overlay; pointer-events:none; }
-.iv-spotlight{ position:fixed; inset:0; pointer-events:none; z-index:-2; }
+#iv-grain{ 
+  position:fixed; 
+  inset:0; 
+  z-index:-1; 
+  opacity:.04; 
+  mix-blend-mode:overlay; 
+  pointer-events:none; 
+}
+
+.iv-spotlight{ 
+  position:fixed; 
+  inset:0; 
+  pointer-events:none; 
+  z-index:-2; 
+}
 .iv-spotlight::before{
-  content:""; position:absolute; inset:0; transition: background 160ms ease;
-  background: radial-gradient(460px circle at var(--iv-mx,50%) var(--iv-my,50%), rgba(255,255,255,.08), transparent 60%);
+  content:""; 
+  position:absolute; 
+  inset:0; 
+  transition: background 160ms ease;
+  background: radial-gradient(460px circle at var(--iv-mx,50%) var(--iv-my,50%), rgba(255,255,255,.04), transparent 60%);
+  opacity: 0.5;
 }
-.iv-ring{ position:fixed; width:22px; height:22px; border-radius:50%; border:1px solid rgba(255,255,255,.08);
-  pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .15s,height .15s,border-color .15s; }
-.iv-ring--alt{ width:36px; height:36px; border-color: rgba(123,92,255,.35); }
 
-.iv-reveal{ opacity:0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
-.iv-reveal.iv-visible{ opacity:1; transform:none; }
+.iv-ring{ 
+  position:fixed; 
+  width:22px; 
+  height:22px; 
+  border-radius:50%; 
+  border:1px solid rgba(255,255,255,.12);
+  pointer-events:none; 
+  z-index:9999; 
+  transform:translate(-50%,-50%); 
+  transition:width .15s,height .15s,border-color .15s;
+  mix-blend-mode: difference;
+}
+.iv-ring--alt{ 
+  width:36px; 
+  height:36px; 
+  border-color: rgba(123,92,255,.45); 
+}
 
-.iv-split span{ display:inline-block; opacity:0; transform: translateY(.6em) rotate(2deg); filter: blur(3px); }
-@keyframes iv-rise{ to{ opacity:1; transform:none; filter:blur(0);} }
+.iv-reveal{ 
+  opacity:0; 
+  transform: translateY(14px); 
+  transition: opacity .7s ease, transform .7s ease; 
+}
+.iv-reveal.iv-visible{ 
+  opacity:1; 
+  transform:none; 
+}
+
+.iv-split span{ 
+  display:inline-block; 
+  opacity:0; 
+  transform: translateY(.6em) rotate(2deg); 
+  filter: blur(3px); 
+}
+@keyframes iv-rise{ 
+  to{ 
+    opacity:1; 
+    transform:none; 
+    filter:blur(0);
+  } 
+}
+
+/* Ajuste para tilt: preservar transforms existentes */
+[data-iv-tilt], .iv-tilt-active {
+  transition: transform .2s ease;
+  will-change: transform;
+}
 
 @media (prefers-reduced-motion: reduce){
   .iv-spotlight::before{ background:none; }
   .iv-blob, .iv-split span{ animation:none !important; }
   .iv-reveal{ opacity:1; transform:none; }
+  .iv-backdrop { animation: none; }
+  #iv-grain { display: none; }
+}
+
+/* Ajustes de compatibilidad para no romper layout existente */
+.iv-backdrop, .iv-spotlight, #iv-grain {
+  pointer-events: none;
 }
