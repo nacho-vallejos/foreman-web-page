@@ -1,3 +1,5 @@
+import { translate } from './i18n.js';
+
 /*
  * Cases JS - Lógica de modal para casos de estudio
  */
@@ -11,7 +13,7 @@ let dataCache = null;
 export async function initCases() {
   // Carga de datos (opcional: si no existe el JSON, usar data-attrs)
   try {
-    const res = await fetch('/assets/data/cases.json', { cache: 'no-store' });
+    const res = await fetch('/assets/data/cases-i18n.json', { cache: 'no-store' });
     if (res.ok) {
       dataCache = await res.json();
       console.log('📊 Datos de casos cargados desde JSON');

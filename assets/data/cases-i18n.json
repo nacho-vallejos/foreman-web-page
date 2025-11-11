@@ -1,0 +1,140 @@
+{
+  "es": {
+    "cases": [
+      {
+        "id": "pipelines-secure",
+        "title": "CI/CD con gates de seguridad",
+        "summary": "Pipelines con SAST/DAST/SCA, SBOM firmado y OPA para riesgo controlado. Implementación completa en multi-repo con gates automáticos que bloquean deployment según nivel de riesgo.",
+        "stack": "GitHub Actions, Trivy, Grype, DefectDojo, OPA/Conftest, Cosign, SBOM",
+        "metrics": "-78% vulnerabilidades · MTTD 24h · 0 secretos en main"
+      },
+      {
+        "id": "redteam-ad",
+        "title": "Red Team en AD híbrido",
+        "summary": "Emulación de adversario con persistencia controlada y hallazgos ejecutivos. Simulación completa de APT con técnicas de lateral movement, privilege escalation y exfiltración en entorno híbrido Azure AD + on-premises.",
+        "stack": "BloodHound, C2 simulado, Sysmon, Sigma, SIEM, Mimikatz, PowerShell Empire",
+        "metrics": "-65% attack paths · 3 nuevas reglas SIEM · 2 playbooks SOC"
+      },
+      {
+        "id": "supply-chain",
+        "title": "Supply Chain Hardening",
+        "summary": "Firmas, provenance y políticas para dependencias e imágenes de contenedor. Implementación de SLSA framework con verificación automática de integridad y trazabilidad completa de artefactos.",
+        "stack": "Cosign, SBOM, SLSA lvl.1, Harbor, Admission Policies, Notary, TUF",
+        "metrics": "-90% CVEs críticos · 5 controles extra · SBOM verificado"
+      },
+      {
+        "id": "cloud-iac",
+        "title": "Cloud + IaC seguro",
+        "summary": "Terraform con validación OPA/Conftest y scanning continuo. Políticas as Code para prevenir misconfigurations y compliance automático con frameworks de seguridad cloud.",
+        "stack": "Terraform, OPA, Conftest, tfsec, Checkov, Terrascan, AWS Config",
+        "metrics": "-72% misconfigs · 0 buckets públicos · CI bloquea riesgos"
+      },
+      {
+        "id": "blue-detections",
+        "title": "Detecciones Azul accionables",
+        "summary": "De telemetría a reglas y dashboards con MTTR mejorado. Desarrollo de detecciones basadas en MITRE ATT&CK con reducción significativa de falsos positivos y alertas contextualizadas.",
+        "stack": "Loki, ELK, Zeek, Suricata, Grafana, Sigma, YARA",
+        "metrics": "-40% falsos positivos · +6 reglas SIEM · MTTR 36h → 8h"
+      },
+      {
+        "id": "soar-lite",
+        "title": "SOAR-lite en Python",
+        "summary": "Playbooks de respuesta y orquestación con APIs. Framework ligero de automatización para respuesta a incidentes con integración multi-herramienta y trazabilidad completa de acciones.",
+        "stack": "Python, FastAPI, Webhook, JQ, Make, Redis, Celery",
+        "metrics": "-55% tiempo de respuesta · +4 integraciones · Audit trail completo"
+      }
+    ]
+  },
+  "en": {
+    "cases": [
+      {
+        "id": "pipelines-secure",
+        "title": "CI/CD with security gates",
+        "summary": "Pipelines with SAST/DAST/SCA, signed SBOM and OPA for controlled risk. Complete implementation in multi-repo with automatic gates that block deployment based on risk level.",
+        "stack": "GitHub Actions, Trivy, Grype, DefectDojo, OPA/Conftest, Cosign, SBOM",
+        "metrics": "-78% vulnerabilities · MTTD 24h · 0 secrets in main"
+      },
+      {
+        "id": "redteam-ad",
+        "title": "Red Team on hybrid AD",
+        "summary": "Adversary emulation with controlled persistence and executive findings. Complete APT simulation with lateral movement, privilege escalation and exfiltration techniques in hybrid Azure AD + on-premises environment.",
+        "stack": "BloodHound, C2 simulated, Sysmon, Sigma, SIEM, Mimikatz, PowerShell Empire",
+        "metrics": "-65% attack paths · 3 new SIEM rules · 2 SOC playbooks"
+      },
+      {
+        "id": "supply-chain",
+        "title": "Supply Chain Hardening",
+        "summary": "Signatures, provenance and policies for dependencies and container images. SLSA framework implementation with automatic integrity verification and complete artifact traceability.",
+        "stack": "Cosign, SBOM, SLSA lvl.1, Harbor, Admission Policies, Notary, TUF",
+        "metrics": "-90% critical CVEs · 5 extra controls · Verified SBOM"
+      },
+      {
+        "id": "cloud-iac",
+        "title": "Secure Cloud + IaC",
+        "summary": "Terraform with OPA/Conftest validation and continuous scanning. Policies as Code to prevent misconfigurations and automated compliance with cloud security frameworks.",
+        "stack": "Terraform, OPA, Conftest, tfsec, Checkov, Terrascan, AWS Config",
+        "metrics": "-72% misconfigs · 0 public buckets · CI blocks risks"
+      },
+      {
+        "id": "blue-detections",
+        "title": "Actionable Blue detections",
+        "summary": "From telemetry to rules and dashboards with improved MTTR. Development of MITRE ATT&CK-based detections with significant reduction of false positives and contextualized alerts.",
+        "stack": "Loki, ELK, Zeek, Suricata, Grafana, Sigma, YARA",
+        "metrics": "-40% false positives · +6 SIEM rules · MTTR 36h → 8h"
+      },
+      {
+        "id": "soar-lite",
+        "title": "SOAR-lite in Python",
+        "summary": "Response playbooks and orchestration with APIs. Lightweight automation framework for incident response with multi-tool integration and complete action traceability.",
+        "stack": "Python, FastAPI, Webhook, JQ, Make, Redis, Celery",
+        "metrics": "-55% response time · +4 integrations · Complete audit trail"
+      }
+    ]
+  },
+  "ar": {
+    "cases": [
+      {
+        "id": "pipelines-secure",
+        "title": "CI/CD مع بوابات الأمان",
+        "summary": "خطوط أنابيب مع SAST/DAST/SCA و SBOM موقعة و OPA للمخاطر المتحكم بها. تنفيذ كامل في مستودعات متعددة مع بوابات تلقائية تمنع النشر بناءً على مستوى المخاطر.",
+        "stack": "GitHub Actions, Trivy, Grype, DefectDojo, OPA/Conftest, Cosign, SBOM",
+        "metrics": "-78% ثغرات أمنية · MTTD 24 ساعة · 0 أسرار في الرئيسي"
+      },
+      {
+        "id": "redteam-ad",
+        "title": "الفريق الأحمر على AD الهجين",
+        "summary": "محاكاة الخصم مع الاستمرارية المتحكم بها ونتائج تنفيذية. محاكاة APT كاملة مع تقنيات الحركة الجانبية وتصعيد الامتيازات والتسريب في بيئة Azure AD الهجينة + المحلية.",
+        "stack": "BloodHound, C2 محاكاة, Sysmon, Sigma, SIEM, Mimikatz, PowerShell Empire",
+        "metrics": "-65% مسارات هجوم · 3 قواعد SIEM جديدة · 2 دليل SOC"
+      },
+      {
+        "id": "supply-chain",
+        "title": "تقوية سلسلة التوريد",
+        "summary": "توقيعات ومصدر وسياسات للتبعيات وصور الحاويات. تنفيذ إطار SLSA مع التحقق التلقائي من السلامة وتتبع كامل للمنتجات.",
+        "stack": "Cosign, SBOM, SLSA lvl.1, Harbor, Admission Policies, Notary, TUF",
+        "metrics": "-90% CVEs حرجة · 5 ضوابط إضافية · SBOM تم التحقق منه"
+      },
+      {
+        "id": "cloud-iac",
+        "title": "السحابة الآمنة + IaC",
+        "summary": "Terraform مع التحقق من OPA/Conftest والمسح المستمر. السياسات كرمز لمنع التكوينات الخاطئة والامتثال التلقائي لأطر أمان السحابة.",
+        "stack": "Terraform, OPA, Conftest, tfsec, Checkov, Terrascan, AWS Config",
+        "metrics": "-72% تكوينات خاطئة · 0 دلاء عامة · CI يحظر المخاطر"
+      },
+      {
+        "id": "blue-detections",
+        "title": "اكتشافات الفريق الأزرق القابلة للتنفيذ",
+        "summary": "من القياس إلى القواعد ولوحات المعلومات مع تحسين MTTR. تطوير اكتشافات قائمة على MITRE ATT&CK مع تقليل كبير للإيجابيات الخاطئة والتنبيهات السياقية.",
+        "stack": "Loki, ELK, Zeek, Suricata, Grafana, Sigma, YARA",
+        "metrics": "-40% إيجابيات كاذبة · +6 قواعد SIEM · MTTR 36 ساعة → 8 ساعات"
+      },
+      {
+        "id": "soar-lite",
+        "title": "SOAR-lite في Python",
+        "summary": "كتيبات الاستجابة والتنسيق مع APIs. إطار أتمتة خفيف للاستجابة للحوادث مع تكامل متعدد الأدوات وتتبع كامل للإجراءات.",
+        "stack": "Python, FastAPI, Webhook, JQ, Make, Redis, Celery",
+        "metrics": "-55% وقت الاستجابة · +4 تكاملات · سجل مراجعة كامل"
+      }
+    ]
+  }
+}

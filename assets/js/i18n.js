@@ -55,6 +55,10 @@ const translations = {
     'cases.detections.desc': 'Reglas SIEM correlacionadas con ATT&CK y falsos positivos reducidos.',
     'cases.soar.title': 'SOAR',
     'cases.soar.desc': 'Automatización de respuesta a incidentes con playbooks validados.',
+    'cases.modal.stack': 'Stack:',
+    'cases.modal.metrics': 'Métricas:',
+    'cases.modal.ttps': 'TTPs (MITRE ATT&CK):',
+    'cases.modal.button': 'Quiero algo así',
     
     // Toolchain
     'toolchain.title': 'Toolchain',
@@ -147,6 +151,10 @@ const translations = {
     // Toolchain
     'toolchain.title': 'Toolchain',
     'toolchain.subtitle': 'Technical stack and professional certifications',
+    'cases.modal.stack': 'Stack:',
+    'cases.modal.metrics': 'Metrics:',
+    'cases.modal.ttps': 'TTPs (MITRE ATT&CK):',
+    'cases.modal.button': 'I want something like this',
     
     // Timeline
     'timeline.title': 'Timeline',
@@ -235,6 +243,10 @@ const translations = {
     // Toolchain
     'toolchain.title': 'مجموعة الأدوات',
     'toolchain.subtitle': 'المجموعة التقنية والشهادات المهنية',
+    'cases.modal.stack': 'المكدس:',
+    'cases.modal.metrics': 'المقاييس:',
+    'cases.modal.ttps': 'تكتيكات وتقنيات وإجراءات (MITRE ATT&CK):',
+    'cases.modal.button': 'أريد شيئًا مثل هذا',
     
     // Timeline
     'timeline.title': 'الجدول الزمني',
