@@ -92,7 +92,7 @@
   <!-- Header -->
   <nav class="navbar" role="banner">
     <div class="navbar-left">
-      <span class="brand">Ignacio Vallejos — DevSecOps / Red Team</span>
+      <span class="brand">Ignacio Vallejos</span>
     </div>
     <div class="navbar-center">
       <ul class="nav-links">
@@ -144,17 +144,17 @@
       <div class="container hero__content">
         <p class="eyebrow" data-reveal>Ignacio Vallejos</p>
         <h1 class="hero__title" data-reveal data-i18n="hero.title">
-          DevSecOps Engineer <span class="stroke-text">//</span> Red Team
+          Software más seguro.<br>Desde el código.
         </h1>
         <p class="hero__subtitle" data-reveal data-i18n="hero.subtitle">
-          Integro seguridad en el ciclo de vida del software y pruebo como adversario para fortalecer defensas.
+          Construyo sistemas que resisten ataques reales. DevSecOps que previene. Red Team que descubre lo que otros no ven.
         </p>
         <p class="hero__subtitle hero__subtitle--highlight" data-reveal data-i18n="hero.consultant">
-          Consultor independiente de Microsoft y profesional certificado en tecnologías Microsoft.
+          <strong>Consultor independiente de Microsoft. Certificado en las tecnologías que importan.</strong>
         </p>
         <div class="hero__ctas" data-reveal>
-          <a class="btn" href="#cases" data-cta="view-cases" data-i18n="hero.cta.cases"><span data-i18n="hero.cta.cases">Ver casos</span></a>
-          <a class="btn btn-ghost" href="#contact" data-cta="contact" data-i18n="hero.cta.contact"><span data-i18n="hero.cta.contact">Contactar</span></a>
+          <a class="btn" href="#cases" data-cta="view-cases" data-i18n="hero.cta.cases">Ver cómo lo hago</a>
+          <a class="btn btn-ghost" href="#contact" data-cta="contact" data-i18n="hero.cta.contact">Hablemos de seguridad</a>
         </div>
 
         <div class="hero__marquee" aria-hidden="true">
@@ -175,9 +175,9 @@
     <section id="services" class="services" aria-label="Qué hago">
       <div class="container">
         <header class="section-head">
-          <h2 class="section-title" data-reveal><span data-i18n="services.title">Qué hago</span></h2>
-          <p class="section-sub" data-reveal><span data-i18n="services.subtitle">Seguridad integrada en el ciclo de vida y ejercicios de adversario con resultados accionables.</span></p>
-          <p class="section-sub section-sub--highlight" data-reveal><span data-i18n="services.consultant">Acompaño a equipos como consultor independiente de Microsoft, diseñando soluciones seguras y auditables sobre Azure y otras plataformas.</span></p>
+          <h2 class="section-title" data-reveal><span data-i18n="services.title">Lo que hago</span></h2>
+          <p class="section-sub" data-reveal><span data-i18n="services.subtitle">Tu software merece seguridad que funciona. Desde el primer commit hasta el último deploy.</span></p>
+          <p class="section-sub section-sub--highlight" data-reveal><span data-i18n="services.consultant">Trabajo con equipos que toman la seguridad en serio. Azure, cloud, on-premise. Lo que necesites.</span></p>
         </header>
 
         <div class="services__grid">
@@ -190,34 +190,15 @@
               </svg>
             </div>
             <h3 id="svc-devsecops-title" class="service-card__title"><span data-i18n="services.devsecops.title">DevSecOps</span></h3>
-            <p class="service-card__desc"><span data-i18n="services.devsecops.desc">Pipelines con gates de seguridad, observabilidad y hardening de supply chain.</span></p>
+            <p class="service-card__desc"><span data-i18n="services.devsecops.desc">La seguridad no puede esperar a producción. La integramos desde el primer commit. Pipelines que detectan, bloquean y aprenden. Sin ralentizar a tu equipo.</span></p>
             <ul class="service-card__list">
-              <li><span data-i18n="services.devsecops.list.0"><span class="badge" title="Static App Security Testing">SAST</span> + <span class="badge" title="Dynamic App Security Testing">DAST</span> + <span class="badge" title="Software Composition Analysis">SCA</span></span></li>
-              <li><span data-i18n="services.devsecops.list.1">SBOM + firmas; políticas <strong>OPA/Conftest</strong></span></li>
-              <li><span data-i18n="services.devsecops.list.2">IaC segura (Terraform) + <strong>Trivy/Grype</strong></span></li>
-              <li><span data-i18n="services.devsecops.list.3">GitOps / CI-CD con <em>break the build</em> por riesgo</span></li>
-              <li><span data-i18n="services.devsecops.list.4">Telemetría (Loki/ELK) → alertas accionables</span></li>
+              <li><span data-i18n="services.redteam.list.0">Ejercicios realistas mapeados a ATT&CK</span></li>
+              <li><span data-i18n="services.redteam.list.1">Descubrimos vectores antes que los atacantes</span></li>
+              <li><span data-i18n="services.redteam.list.2">Validamos tus controles con escenarios controlados</span></li>
+              <li><span data-i18n="services.redteam.list.3">Reportes que priorizan, no abruman</span></li>
+              <li><span data-i18n="services.redteam.list.4">Re-testing para verificar que las defensas mejoraron</span></li>
             </ul>
-            <a class="service-card__cta btn" href="#cases" aria-label="Ver casos de DevSecOps"><span data-i18n="services.cta">Ver casos</span></a>
-          </article>
-
-          <!-- Card: Red Team -->
-          <article class="service-card glass card-tilt" tabindex="0" aria-labelledby="svc-redteam-title">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><path d="M9 12l3 3 4-5"/>
-              </svg>
-            </div>
-            <h3 id="svc-redteam-title" class="service-card__title"><span data-i18n="services.redteam.title">Red Team</span></h3>
-            <p class="service-card__desc"><span data-i18n="services.redteam.desc">Emulación de adversarios mapeada a MITRE ATT&CK y reportes ejecutivos claros.</span></p>
-            <ul class="service-card__list">
-              <li><span data-i18n="services.redteam.list.0">TTPs ATT&CK: Initial Access → Exfiltration</span></li>
-              <li><span data-i18n="services.redteam.list.1">Phishing simulado y ejercicio de credenciales</span></li>
-              <li><span data-i18n="services.redteam.list.2">Persistencia, C2 controlado y detección azul</span></li>
-              <li><span data-i18n="services.redteam.list.3">Recomendaciones priorizadas por riesgo</span></li>
-              <li><span data-i18n="services.redteam.list.4">Re-test y validación de remediaciones</span></li>
-            </ul>
-            <a class="service-card__cta btn btn-ghost" href="#contact" aria-label="Contactar por ejercicios Red Team"><span data-i18n="services.cta.contact">Contactar</span></a>
+            <a class="service-card__cta btn btn-ghost" href="#contact" aria-label="Contactar por ejercicios Red Team"><span data-i18n="services.cta.contact">Probá tus defensas</span></a>
           </article>
         </div>
       </div>
@@ -227,8 +208,8 @@
     <section id="cases" class="cases" aria-label="Casos y laboratorios">
       <div class="container">
         <header class="section-head">
-          <h2 class="section-title" data-reveal><span data-i18n="cases.title">Casos / Labs</span></h2>
-          <p class="section-sub" data-reveal><span data-i18n="cases.subtitle">Proyectos prácticos con resultados medibles y trazables a controles.</span></p>
+          <h2 class="section-title" data-reveal><span data-i18n="cases.title">Resultados reales</span></h2>
+          <p class="section-sub" data-reveal><span data-i18n="cases.subtitle">Problemas complejos. Soluciones claras. Impacto medible.</span></p>
         </header>
 
         <div class="cases__grid">
@@ -246,15 +227,15 @@
                   <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
                   <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
                 </svg>
-                <span data-i18n="cases.pipelines.title">CI/CD con gates de seguridad</span>
+                <span data-i18n="cases.pipelines.title">Pipelines sin vulnerabilidades</span>
               </h3>
-              <p class="case-card__desc"><span data-i18n="cases.pipelines.desc">SAST/DAST/SCA, SBOM firmado y OPA en pipelines multi-repo.</span></p>
+              <p class="case-card__desc"><span data-i18n="cases.pipelines.desc">El equipo desplegaba código sin visibilidad de seguridad. Automatizamos análisis en cada commit. Ahora los bugs críticos se frenan antes de llegar a producción.</span></p>
               <ul class="case-card__metrics" aria-label="Métricas">
                 <li><span>-78%</span> vulnerabilidades</li>
                 <li><span>24h</span> MTTD</li>
                 <li><span>0</span> secrets en main</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="pipelines-secure" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="pipelines-secure" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
 
@@ -269,15 +250,15 @@
                   <path d="M21 3h-3l-3 3v4l-2 2h-4l-3 3v3"/>
                   <circle cx="12" cy="12" r="2"/>
                 </svg>
-                <span data-i18n="cases.redteam.title">Red Team en AD híbrido</span>
+                <span data-i18n="cases.redteam.title">Active Directory a prueba</span>
               </h3>
-              <p class="case-card__desc"><span data-i18n="cases.redteam.desc">Emulación ATT&CK, persistencia controlada y reporte ejecutivo.</span></p>
+              <p class="case-card__desc"><span data-i18n="cases.redteam.desc">Creían que su AD estaba seguro. Encontramos 8 caminos hacia Domain Admin. Los cerramos todos. Ahora sus controles detectan amenazas reales.</span></p>
               <ul class="case-card__metrics">
                 <li><span>-65%</span> paths de ataque</li>
                 <li><span>+3</span> detecciones SIEM</li>
                 <li><span>2</span> playbooks nuevos</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="redteam-ad" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="redteam-ad" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
 
@@ -293,15 +274,15 @@
                   <path d="M12 2v20"/>
                   <path d="M8 8l8 8"/>
                 </svg>
-                <span data-i18n="cases.supply.title">Supply Chain Hardening</span>
+                <span data-i18n="cases.supply.title">Dependencias confiables</span>
               </h3>
-              <p class="case-card__desc"><span data-i18n="cases.supply.desc">Firmas, provenance y políticas en dependencias e imágenes.</span></p>
+              <p class="case-card__desc"><span data-i18n="cases.supply.desc">Sus contenedores arrastraban CVEs críticos por meses. Implementamos verificación automática. Las imágenes vulnerables ya no pasan el CI.</span></p>
               <ul class="case-card__metrics">
                 <li><span>-90%</span> CVEs críticos</li>
                 <li><span>+5</span> controles</li>
                 <li><span>SBOM</span> verificado</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="supply-chain" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="supply-chain" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
 
@@ -324,7 +305,7 @@
                 <li><span>0</span> buckets públicos</li>
                 <li><span>CI</span> bloquea riesgos</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="cloud-iac" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="cloud-iac" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
 
@@ -347,7 +328,7 @@
                 <li><span>+6</span> reglas SIEM</li>
                 <li><span>MTTR</span> 36h → 8h</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="blue-detections" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="blue-detections" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
 
@@ -372,7 +353,7 @@
                 <li><span>+4</span> integraciones</li>
                 <li><span>Audit</span> trail</li>
               </ul>
-              <button class="btn btn-ghost case-card__open" data-open-case="soar-lite" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Leer caso</span></button>
+              <button class="btn btn-ghost case-card__open" data-open-case="soar-lite" aria-haspopup="dialog" aria-controls="case-modal"><span data-i18n="cases.readCase">Ver el proyecto</span></button>
             </div>
           </article>
         </div>
@@ -398,7 +379,7 @@
             </div>
           </section>
           <footer class="case-modal__foot">
-            <a class="btn" href="#contact">Quiero algo así</a>
+            <a class="btn" href="#contact">Hagamos esto juntos</a>
           </footer>
         </div>
       </div>
@@ -446,10 +427,9 @@
     <!-- Timeline Section -->
     <section id="timeline" class="section" aria-labelledby="timeline-title">
       <div class="container">
-        <h2 id="timeline-title" class="section-title fade-in-up"><span data-i18n="timeline.title">Hitos</span></h2>
+        <h2 id="timeline-title" class="section-title fade-in-up"><span data-i18n="timeline.title">El camino</span></h2>
         <p class="section-subtitle fade-in-up">
-          
-          <span data-i18n="timeline.subtitle">Mi trayectoria en ciberseguridad</span>
+          <span data-i18n="timeline.subtitle">Cada proyecto enseña algo nuevo. Cada certificación valida lo aprendido.</span>
         </p>
         
         <div class="timeline">
@@ -527,10 +507,9 @@
     <!-- Notes Section -->
     <section id="notes" class="section" aria-labelledby="notes-title">
       <div class="container">
-        <h2 id="notes-title" class="section-title fade-in-up"><span data-i18n="notes.title">Notas</span></h2>
+        <h2 id="notes-title" class="section-title fade-in-up"><span data-i18n="notes.title">Ideas</span></h2>
         <p class="section-subtitle fade-in-up">
-          
-          <span data-i18n="notes.subtitle">Reflexiones sobre ciberseguridad y tecnología</span>
+          <span data-i18n="notes.subtitle">Lo que aprendo, lo comparto. Seguridad que se entiende.</span>
         </p>
         
         <div class="notes-grid">
@@ -546,7 +525,7 @@
             <p class="note-excerpt">
               Explorando implementaciones avanzadas de Zero Trust en clusters Kubernetes, desde service mesh hasta workload identity y runtime security.
             </p>
-            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+            <a href="#" class="note-link focus-ring">Leer más →</a>
           </article>
           
           <article class="note-card fade-in-up" tabindex="0">
@@ -561,7 +540,7 @@
             <p class="note-excerpt">
               Cómo combinar ejercicios de Red Team con colaboración Purple Team para mejorar las defensas organizacionales de manera medible.
             </p>
-            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+            <a href="#" class="note-link focus-ring">Leer más →</a>
           </article>
           
           <article class="note-card fade-in-up" tabindex="0">
@@ -576,7 +555,7 @@
             <p class="note-excerpt">
               Integrando threat modeling automatizado en pipelines de Infrastructure as Code para identificar riesgos de seguridad tempranamente.
             </p>
-            <a href="#" class="note-link focus-ring">Leer artículo →</a>
+            <a href="#" class="note-link focus-ring">Leer más →</a>
           </article>
         </div>
       </div>
@@ -585,10 +564,9 @@
     <!-- Contact Section -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title" class="section-title fade-in-up"><span data-i18n="contact.title">Contacto</span></h2>
+        <h2 id="contact-title" class="section-title fade-in-up"><span data-i18n="contact.title">Hablemos</span></h2>
         <p class="section-subtitle fade-in-up">
-          
-          <span data-i18n="contact.subtitle">¿Proyecto interesante? Hablemos</span>
+          <span data-i18n="contact.subtitle">Tu software. Más fuerte. Empecemos.</span>
         </p>
         
         <form class="contact-form fade-in-up" novalidate>
@@ -615,7 +593,7 @@
               <line x1="22" y1="2" x2="11" y2="13"></line>
               <polygon points="22,2 15,22 11,13 2,9"></polygon>
             </svg>
-            <span data-i18n="contact.form.submit">Enviar mensaje</span>
+            <span data-i18n="contact.form.submit">Comenzar conversación</span>
           </button>
         </form>
       </div>

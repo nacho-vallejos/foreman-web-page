@@ -14,16 +14,16 @@ const translations = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.title': 'DevSecOps Engineer / Red Team',
-    'hero.subtitle': 'Integro seguridad en el ciclo de vida del software y pruebo como adversario para fortalecer defensas.',
-    'hero.consultant': 'Consultor independiente de Microsoft y profesional certificado en tecnologías Microsoft.',
-    'hero.cta.cases': 'Ver casos',
-    'hero.cta.contact': 'Contactar',
+    'hero.title': 'Software más seguro.<br>Desde el código.',
+    'hero.subtitle': 'Construyo sistemas que resisten ataques reales. DevSecOps que previene. Red Team que descubre lo que otros no ven.',
+    'hero.consultant': 'Consultor independiente de Microsoft. Certificado en las tecnologías que importan.',
+    'hero.cta.cases': 'Ver cómo lo hago',
+    'hero.cta.contact': 'Hablemos de seguridad',
     
     // Services
-    'services.title': 'Qué hago',
-    'services.subtitle': 'Seguridad integrada en el ciclo de vida y ejercicios de adversario con resultados accionables.',
-    'services.consultant': 'Acompaño a equipos como consultor independiente de Microsoft, diseñando soluciones seguras y auditables sobre Azure y otras plataformas.',
+    'services.title': 'Lo que hago',
+    'services.subtitle': 'Tu software merece seguridad que funciona. Desde el primer commit hasta el último deploy.',
+    'services.consultant': 'Trabajo con equipos que toman la seguridad en serio. Azure, cloud, on-premise. Lo que necesites.',
     'services.devsecops.title': 'DevSecOps',
     'services.devsecops.desc': 'Pipelines con gates de seguridad, observabilidad y hardening de supply chain.',
     'services.devsecops.list.0': 'SAST + DAST + SCA',
@@ -80,11 +80,11 @@ const translations = {
     'timeline.2019.desc': 'Inicio en DevSecOps como Security Engineer, automatizando procesos de seguridad y integrando security testing en pipelines CI/CD.',
     
     // Notes
-    'notes.title': 'Notas',
+    'notes.title': 'Ideas',
     'notes.subtitle': 'Artículos técnicos y análisis de amenazas',
     
     // Contact
-    'contact.title': 'Contacto',
+    'contact.title': 'Hablemos',
     'contact.subtitle': 'Hablemos de seguridad',
     'contact.email': 'Email',
     'contact.linkedin': 'LinkedIn',
@@ -106,15 +106,15 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': 'DevSecOps Engineer / Red Team',
-    'hero.subtitle': 'I integrate security into the software lifecycle and test as an adversary to strengthen defenses.',
-    'hero.consultant': 'Independent Microsoft consultant and certified professional in Microsoft technologies.',
-    'hero.cta.cases': 'View cases',
-    'hero.cta.contact': 'Contact',
+    'hero.title': 'Software más seguro.<br>Desde el código.',
+    'hero.subtitle': 'I build systems that resist real attacks. DevSecOps that prevents. Red Team that discovers what others don\'t see.',
+    'hero.consultant': 'Independent Microsoft consultant. Certified in the technologies that matter.',
+    'hero.cta.cases': 'See how I do it',
+    'hero.cta.contact': 'Let\'s talk security',
     
     // Services
     'services.title': 'What I do',
-    'services.subtitle': 'Security integrated into the lifecycle and adversary exercises with actionable results.',
+    'services.subtitle': 'Your software deserves security that works. From first commit to final deploy.',
     'services.consultant': 'I support teams as an independent Microsoft consultant, designing secure and auditable solutions on Azure and other platforms.',
     'services.devsecops.title': 'DevSecOps',
     'services.devsecops.desc': 'Pipelines with security gates, observability and supply chain hardening.',
@@ -172,11 +172,11 @@ const translations = {
     'timeline.2019.desc': 'Started in DevSecOps as Security Engineer, automating security processes and integrating security testing into CI/CD pipelines.',
     
     // Notes
-    'notes.title': 'Notes',
+    'notes.title': 'Ideas',
     'notes.subtitle': 'Technical articles and threat analysis',
     
     // Contact
-    'contact.title': 'Contact',
+    'contact.title': 'Let\'s talk',
     'contact.subtitle': "Let's talk about security",
     'contact.email': 'Email',
     'contact.linkedin': 'LinkedIn',
@@ -198,7 +198,7 @@ const translations = {
     'nav.contact': 'اتصل',
     
     // Hero
-    'hero.title': 'مهندس DevSecOps / الفريق الأحمر',
+    'hero.title': 'برمجيات أكثر أمانًا.<br>من الكود.',
     'hero.subtitle': 'أدمج الأمن في دورة حياة البرمجيات وأختبر كخصم لتعزيز الدفاعات.',
     'hero.consultant': 'مستشار مستقل لمايكروسوفت ومحترف معتمد في تقنيات مايكروسوفت.',
     'hero.cta.cases': 'عرض الحالات',
@@ -206,7 +206,7 @@ const translations = {
     
     // Services
     'services.title': 'ما أفعله',
-    'services.subtitle': 'الأمن المدمج في دورة الحياة وتمارين الخصم مع نتائج قابلة للتنفيذ.',
+    'services.subtitle': 'برمجياتك تستحق أمانًا يعمل. من أول commit إلى آخر deploy.',
     'services.consultant': 'أدعم الفرق كمستشار مستقل لمايكروسوفت، وأصمم حلولاً آمنة وقابلة للتدقيق على Azure ومنصات أخرى.',
     'services.devsecops.title': 'DevSecOps',
     'services.devsecops.desc': 'خطوط الأنابيب مع بوابات الأمان والمراقبة وتقوية سلسلة التوريد.',
@@ -264,11 +264,11 @@ const translations = {
     'timeline.2019.desc': 'البدء في DevSecOps كمهندس أمن، أتمتة عمليات الأمان ودمج اختبار الأمان في خطوط CI/CD.',
     
     // Notes
-    'notes.title': 'ملاحظات',
+    'notes.title': 'أفكار',
     'notes.subtitle': 'مقالات تقنية وتحليل التهديدات',
     
     // Contact
-    'contact.title': 'اتصل',
+    'contact.title': 'لنتحدث',
     'contact.subtitle': 'دعنا نتحدث عن الأمن',
     'contact.email': 'البريد الإلكتروني',
     'contact.linkedin': 'لينكد إن',
