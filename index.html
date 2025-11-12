@@ -143,18 +143,18 @@
 
       <div class="container hero__content">
         <p class="eyebrow" data-reveal>Ignacio Vallejos</p>
-        <h1 class="hero__title" data-reveal data-i18n="hero.title">
-          Software más seguro.<br>Desde el código.
+        <h1 class="hero__title" data-reveal>
+          <span data-i18n="hero.title">Software más seguro.<br>Desde el código.</span>
         </h1>
-        <p class="hero__subtitle" data-reveal data-i18n="hero.subtitle">
-          Construyo sistemas que resisten ataques reales. DevSecOps que previene. Red Team que descubre lo que otros no ven.
+        <p class="hero__subtitle" data-reveal>
+          <span data-i18n="hero.subtitle">Construyo sistemas que resisten ataques reales. DevSecOps que previene. Red Team que descubre lo que otros no ven.</span>
         </p>
-        <p class="hero__subtitle hero__subtitle--highlight" data-reveal data-i18n="hero.consultant">
-          <strong>Consultor independiente de Microsoft. Certificado en las tecnologías que importan.</strong>
+        <p class="hero__subtitle hero__subtitle--highlight" data-reveal>
+          <strong><span data-i18n="hero.consultant">Consultor independiente de Microsoft. Certificado en las tecnologías que importan.</span></strong>
         </p>
         <div class="hero__ctas" data-reveal>
-          <a class="btn" href="#cases" data-cta="view-cases" data-i18n="hero.cta.cases">Ver cómo lo hago</a>
-          <a class="btn btn-ghost" href="#contact" data-cta="contact" data-i18n="hero.cta.contact">Hablemos de seguridad</a>
+          <a class="btn" href="#cases" data-cta="view-cases"><span data-i18n="hero.cta.cases">Ver cómo lo hago</span></a>
+          <a class="btn btn-ghost" href="#contact" data-cta="contact"><span data-i18n="hero.cta.contact">Hablemos de seguridad</span></a>
         </div>
 
         <div class="hero__marquee" aria-hidden="true">
@@ -192,13 +192,30 @@
             <h3 id="svc-devsecops-title" class="service-card__title"><span data-i18n="services.devsecops.title">DevSecOps</span></h3>
             <p class="service-card__desc"><span data-i18n="services.devsecops.desc">La seguridad no puede esperar a producción. La integramos desde el primer commit. Pipelines que detectan, bloquean y aprenden. Sin ralentizar a tu equipo.</span></p>
             <ul class="service-card__list">
-              <li><span data-i18n="services.redteam.list.0">Ejercicios realistas mapeados a ATT&CK</span></li>
-              <li><span data-i18n="services.redteam.list.1">Descubrimos vectores antes que los atacantes</span></li>
-              <li><span data-i18n="services.redteam.list.2">Validamos tus controles con escenarios controlados</span></li>
-              <li><span data-i18n="services.redteam.list.3">Reportes que priorizan, no abruman</span></li>
-              <li><span data-i18n="services.redteam.list.4">Re-testing para verificar que las defensas mejoraron</span></li>
+              <li><span data-i18n="services.devsecops.item1">Seguridad que no ralentiza</span></li>
+              <li><span data-i18n="services.devsecops.item2">Gates que bloquean vulnerabilidades reales</span></li>
+              <li><span data-i18n="services.devsecops.item3">Compliance automatizado</span></li>
+              <li><span data-i18n="services.devsecops.item4">Cada deploy, más seguro que el anterior</span></li>
             </ul>
-            <a class="service-card__cta btn btn-ghost" href="#contact" aria-label="Contactar por ejercicios Red Team"><span data-i18n="services.cta.contact">Probá tus defensas</span></a>
+            <a class="service-card__cta btn" href="#cases" aria-label="Ver casos de DevSecOps"><span data-i18n="services.devsecops.cta">Ver cómo funciona</span></a>
+          </article>
+
+          <!-- Card: Red Team -->
+          <article class="service-card glass card-tilt" tabindex="0" aria-labelledby="svc-redteam-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><path d="M9 12l3 3 4-5"/>
+              </svg>
+            </div>
+            <h3 id="svc-redteam-title" class="service-card__title"><span data-i18n="services.redteam.title">Red Team</span></h3>
+            <p class="service-card__desc"><span data-i18n="services.redteam.desc">Pensamos como atacantes para que tú puedas defenderte mejor. Simulamos amenazas reales. Identificamos lo que falla. Te damos el mapa para arreglarlo.</span></p>
+            <ul class="service-card__list">
+              <li><span data-i18n="services.redteam.item1">Encontramos lo que los scanners no ven</span></li>
+              <li><span data-i18n="services.redteam.item2">Tus defensas puestas a prueba</span></li>
+              <li><span data-i18n="services.redteam.item3">Simulación de adversarios reales</span></li>
+              <li><span data-i18n="services.redteam.item4">Reportes que tu equipo puede usar</span></li>
+            </ul>
+            <a class="service-card__cta btn btn-ghost" href="#contact" aria-label="Contactar por ejercicios Red Team"><span data-i18n="services.redteam.cta">Probá tus defensas</span></a>
           </article>
         </div>
       </div>
