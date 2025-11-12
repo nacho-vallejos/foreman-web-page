@@ -91,6 +91,25 @@ const translations = {
     'contact.github': 'GitHub',
     'contact.form.message.placeholder': 'Cuéntame sobre tu proyecto o desafío de seguridad...',
     
+    // Categorías del radar
+
+    
+    'categories.devsecops': 'DevSecOps',
+
+    
+    'categories.redteam': 'Red Team',
+
+    
+    'categories.cloud': 'Cloud/Infra',
+
+    
+    'categories.observability': 'Observabilidad',
+
+    
+    'categories.programming': 'Programación',
+
+
+    
     // Footer
     'footer.rights': 'Todos los derechos reservados.'
   },
@@ -182,6 +201,25 @@ const translations = {
     'contact.linkedin': 'LinkedIn',
     'contact.github': 'GitHub',
     'contact.form.message.placeholder': 'Tell me about your security project or challenge...',
+    
+    // Radar categories
+
+    
+    'categories.devsecops': 'DevSecOps',
+
+    
+    'categories.redteam': 'Red Team',
+
+    
+    'categories.cloud': 'Cloud/Infra',
+
+    
+    'categories.observability': 'Observability',
+
+    
+    'categories.programming': 'Programming',
+
+
     
     // Footer
     'footer.rights': 'All rights reserved.'
