@@ -14,7 +14,7 @@ const translations = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.title': 'Software más seguro.<br>Desde el código.',
+    'hero.title': 'Software más seguro. Desde el código.',
     'hero.subtitle': 'Construyo sistemas que resisten ataques reales. DevSecOps que previene. Red Team que descubre lo que otros no ven.',
     'hero.consultant': 'Consultor independiente de Microsoft. Certificado en las tecnologías que importan.',
     'hero.cta.cases': 'Ver cómo lo hago',
@@ -106,7 +106,7 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': 'Software más seguro.<br>Desde el código.',
+    'hero.title': 'Software más seguro. Desde el código.',
     'hero.subtitle': 'I build systems that resist real attacks. DevSecOps that prevents. Red Team that discovers what others don\'t see.',
     'hero.consultant': 'Independent Microsoft consultant. Certified in the technologies that matter.',
     'hero.cta.cases': 'See how I do it',
@@ -198,7 +198,7 @@ const translations = {
     'nav.contact': 'اتصل',
     
     // Hero
-    'hero.title': 'برمجيات أكثر أمانًا.<br>من الكود.',
+    'hero.title': 'برمجيات أكثر أمانًا. من الكود.',
     'hero.subtitle': 'أدمج الأمن في دورة حياة البرمجيات وأختبر كخصم لتعزيز الدفاعات.',
     'hero.consultant': 'مستشار مستقل لمايكروسوفت ومحترف معتمد في تقنيات مايكروسوفت.',
     'hero.cta.cases': 'عرض الحالات',
